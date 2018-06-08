@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>4.3.- Desfragmentación y chequeo de discos. </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="generator" content="eXeLearning 2.0.4ppa04 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú"}</script>
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Administración básica de Windows</a></li>
+   <li><a href="1_herramientas_administrativas_y_del_sistema.html" class="daddy">1.- Herramientas administrativas y del sistema.</a>
+   <ul class="other-section">
+      <li><a href="11_herramientas_administrativas.html" class="no-ch">1.1.- Herramientas administrativas.</a></li>
+      <li><a href="12_herramientas_del_sistema.html" class="no-ch">1.2.- Herramientas del sistema.</a></li>
+   </ul>
+   </li>
+   <li><a href="2_administracin_de_grupos_y_cuentas_de_usuario_locales.html" class="daddy">2.- Administración de grupos y cuentas de usuario locales.</a>
+   <ul class="other-section">
+      <li><a href="21_tipos_de_cuentas_de_usuario_y_grupos_locales.html" class="no-ch">2.1.- Tipos de cuentas de usuario y grupos locales</a></li>
+      <li><a href="22_gestin_de_cuentas_de_usuario_y_grupos_locales_i.html" class="daddy">2.2.- Gestión de cuentas de usuario y grupos locales (I).</a>
+      <ul class="other-section">
+         <li><a href="221_gestin_de_cuentas_de_usuario_y_grupos_locales_ii.html" class="no-ch">2.2.1.- Gestión de cuentas de usuario y grupos locales (II).</a></li>
+      </ul>
+      </li>
+      <li><a href="23_uac_control_de_cuentas_de_usuario.html" class="no-ch">2.3.- UAC: Control de Cuentas de Usuario.</a></li>
+   </ul>
+   </li>
+   <li><a href="3_administracin_de_seguridad_de_recursos_a_nivel_local.html" class="daddy">3.- Administración de seguridad de recursos a nivel local.</a>
+   <ul class="other-section">
+      <li><a href="31_permisos_de_archivos_y_carpetas_i.html" class="daddy">3.1.- Permisos de archivos y carpetas (I).</a>
+      <ul class="other-section">
+         <li><a href="311_permisos_de_archivos_y_carpetas_ii_herencia.html" class="no-ch">3.1.1.- Permisos de archivos y carpetas (II). Herencia</a></li>
+      </ul>
+      </li>
+      <li><a href="32_directivas_de_seguridad_local_y_directivas_de_grupo_local.html" class="daddy">3.2.- Directivas de seguridad local y Directivas de grupo local.</a>
+      <ul class="other-section">
+         <li><a href="321_directivas_de_seguridad_local.html" class="no-ch">3.2.1.- Directivas de seguridad local.</a></li>
+         <li><a href="322_creacin_de_contraseas.html" class="daddy">3.2.2.- Creación de contraseñas</a>
+         <ul class="other-section">
+            <li><a href="3221_contraseas_robustas.html" class="no-ch">3.2.2.1.- Contraseñas robustas</a></li>
+         </ul>
+         </li>
+         <li><a href="323_directivas_de_grupo_local.html" class="no-ch">3.2.3.- Directivas de grupo local.</a></li>
+      </ul>
+      </li>
+      <li><a href="33_cuotas_de_disco.html" class="no-ch">3.3.- Cuotas de disco</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="4_mantenimiento_del_sistema.html" class="current-page-parent daddy">4.- Mantenimiento del sistema.</a>
+   <ul>
+      <li><a href="41_configuracin_de_las_actualizaciones_automticas.html" class="no-ch">4.1.- Configuración de las actualizaciones automáticas.</a></li>
+      <li><a href="42_monitorizacin_del_sistema_monitor_de_rendimiento.html" class="no-ch">4.2.- Monitorización del sistema: Monitor de rendimiento.</a></li>
+      <li id="active"><a href="43_desfragmentacin_y_chequeo_de_discos.html" class="active no-ch">4.3.- Desfragmentación y chequeo de discos.</a></li>
+      <li><a href="44_programacin_de_tareas_de_mantenimiento.html" class="no-ch">4.4.- Programación de tareas de mantenimiento.</a></li>
+      <li><a href="45_restaurar_el_sistema.html" class="no-ch">4.5.- Restaurar el sistema.</a></li>
+      <li><a href="46_copias_de_seguridad.html" class="no-ch">4.6.- Copias de seguridad.</a></li>
+   </ul>
+   </li>
+   <li><a href="5_uso_de_antivirus_antiespas_y_otros_programas_de_proteccin.html" class="daddy">5.- Uso de antivirus, antiespías y otros programas de protección.</a>
+   <ul class="other-section">
+      <li><a href="51_antivirus.html" class="no-ch">5.1.- Antivirus.</a></li>
+      <li><a href="52_windows_defender.html" class="no-ch">5.2.- Windows Defender.</a></li>
+      <li><a href="53_prevencin_de_ejecucin_de_datos_dep.html" class="no-ch">5.3.- Prevención de ejecución de datos (DEP).</a></li>
+      <li><a href="54_sistema_de_cifrado_de_archivos.html" class="daddy">5.4.- Sistema de cifrado de archivos.</a>
+      <ul class="other-section">
+         <li><a href="541_procesos_de_cifrado_exportacin_e_importacin_de_certificados_efs.html" class="no-ch">5.4.1.- Procesos de cifrado, exportación e importación de certificados EFS.</a></li>
+         <li><a href="542_bitlocker.html" class="no-ch">5.4.2.- Bitlocker.</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="6_gestin_de_procesos_en_windows.html" class="daddy">6. Gestión de procesos en Windows.</a>
+   <ul class="other-section">
+      <li><a href="61_gestin_de_procesos_por_lnea_de_comandos.html" class="no-ch">6.1.- Gestión de procesos por línea de comandos.</a></li>
+   </ul>
+   </li>
+   <li><a href="7_gestin_de_servicios_en_windows.html" class="daddy">7. Gestión de servicios en Windows</a>
+   <ul class="other-section">
+      <li><a href="71_gestin_de_servicios_en_modo_comando.html" class="no-ch">7.1.- Gestión de servicios en modo comando.</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="42_monitorizacin_del_sistema_monitor_de_rendimiento.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="44_programacin_de_tareas_de_mantenimiento.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">4.3.- Desfragmentación y chequeo de discos.</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id214">
+<div class="iDevice emphasis0">
+<div id="ta214_1" class="block iDevice_content">
+<div id="id30" class="FreeTextfpdIdevice">
+<div class="iDevice emphasis0">
+<div id="ta30_73" class="block" style="display: block;">
+<div class="elemento_derecha">
+<div class="elemento_centrado"><a title="Ampliar imagen." href="SI06_CONT_R34_desfrag.png"><img alt="Muestra la herramienta Desfragmentador de disco de Windows 7 donde se ha seleccionado el disco C: que est&aacute; siendo desfragmentado, en un 84% ya realizado." class="imagen_ampliable" src="SI06_CONT_R34_desfrag_miniatura.PNG" title="Herramienta Desfragmentaci&oacute;n de disco de Windows 7" /></a></div>
+</div>
+<p>La <strong>fragmentaci&oacute;n de un disco</strong> se produce cuando numerosos archivos se encuentran divididos a lo largo de la partici&oacute;n. El hecho de que un archivo se encuentre disperso reduce el rendimiento de la unidad, por que el cabezal tendr&aacute; que saltar por varias partes del disco para obtener la informaci&oacute;n y eso aumenta el tiempo de acceso al contenido del archivo.</p>
+<p>Un programa desfragmentador de disco nos ayuda a que todas las porciones de un archivo queden contiguas y que la parte del disco duro que tiene informaci&oacute;n est&eacute; al principio y el espacio de la partici&oacute;n quede al final.</p>
+<p>Es muy recomendable desfragmentar el disco duro cuando notes que el rendimiento del disco duro est&eacute; decayendo, es decir, que el sistema operativo tarde mucho en encontrar la informaci&oacute;n en el disco duro porque &eacute;sta se encuentra muy dispersa.</p>
+<p><span lang="en">Windows</span> 7 proporciona una herramienta para ello, el <strong>Desfragmentador de disco</strong>, podemos acceder a ella desde <strong>Inicio - Todos los programas - Accesorios - Herramientas del sistema</strong>. El Desfragmentador de disco vuelve a organizar los datos fragmentados de manera que los discos y las unidades puedan funcionar de manera m&aacute;s eficaz. Se ejecuta por defecto seg&uacute;n una programaci&oacute;n (que puede definirse a medida), pero tambi&eacute;n puede analizar y desfragmentar los discos y las unidades manualmente.</p>
+</div>
+</div>
+</div>
+<div class="node">
+<div id="id31" class="FreeTextfpdIdevice">
+<div class="iDevice emphasis0">
+<div id="ta31_73" class="block" style="display: block;">
+<div class="elemento_derecha">
+<div class="elemento_centrado"><a title="Ampliar imagen." href="SI06_CONT_R35_chequeo_disco.png"><img alt="Herramienta Chequeo de discos de Windows 7 a la que se accede desde bot&oacute;n derecho sobre el disco, Propiedades &ndash; Herramientas- opci&oacute;n Comprobar ahora." class="imagen_ampliable" src="SI06_CONT_R35_chequeo_disco_miniatura.png" title="Herramienta Chequeo de discos de Windows 7" height="136" width="196" /></a></div>
+</div>
+<p>Por otra parte, podemos <strong>comprobar o chequear los discos</strong>, para comprobar si existen problemas en los mismos. <span lang="en">Windows</span> 7 proporciona una herramienta para ello, si existen problemas, la herramienta intentar&aacute; reparar los que encuentre. Por ejemplo, puede reparar los problemas relacionados con sectores defectuosos, <a class="glosario" title="Ver la definici&oacute;n de &quot;Cluster&quot; (Se abre en una nueva ventana)">cl&uacute;steres</a> perdidos, archivos con v&iacute;nculos cruzados y errores de directorio. Para poder usar la herramienta se debe iniciar sesi&oacute;n como administrador o como miembro del grupo Administradores.</p>
+<p>Tenemos dos opciones para ejecutar la herramienta de Chequeo de discos de <span lang="en">Windows</span> 7, con el comando <code>chkdsk.exe</code> (<span lang="en">Check disk</span>) o desde el <strong>Equipo </strong>o<strong> Explorador de <span lang="en">Windows</span> </strong>en la ficha<strong> Propiedades del disco</strong>. A continuaci&oacute;n describimos ambos procesos:</p>
+<p><strong>Para ejecutar </strong><code>Chkdsk</code><strong> en el s&iacute;mbolo del sistema:</strong></p>
+<ol>
+<li>Haz click en <strong>Inicio</strong> y, a continuaci&oacute;n, en <strong>Ejecutar</strong>.</li>
+<li>En el cuadro <strong>Abrir</strong>, escriba <code>cmd</code> y presione <span lang="en">ENTER</span>.</li>
+<li>Siga uno de estos procedimientos:
+<ul class="lista_verificacion">
+<li>Para ejecutar <code>chkdsk</code> en modo de s&oacute;lo lectura, en el s&iacute;mbolo del sistema, escribe <code>chkdsk</code> y, a continuaci&oacute;n, presiona la tecla <span lang="en">ENTER</span>. Se puede indicar como par&aacute;metro la partici&oacute;n que queremos comprobar, por ejemplo: <code>chkdsk f:</code> (chequear&aacute; la unidad F:).</li>
+<li><strong>Nota</strong>: si alguno de los archivos de la unidad de disco duro se encuentra abierto, recibir&aacute; el mensaje siguiente: <code>chkdsk</code> no se puede ejecutar porque otro proceso ya est&aacute; utilizando el volumen. &iquest;Desea que se prepare este volumen para que sea comprobado la pr&oacute;xima vez que se inicie el sistema? (S/N). Escribe S y, a continuaci&oacute;n, presiona la tecla <span lang="en">ENTER</span> para programar la comprobaci&oacute;n del disco y, a continuaci&oacute;n, reinicie el equipo para iniciarla.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Para ejecutar </strong><code>chkdsk</code><strong> a partir de Equipo o el Explorador de <span lang="en">Windows</span>:</strong></p>
+<ol>
+<li>Haz doble click en <strong>Mi equipo</strong> y, a continuaci&oacute;n, haz click con el bot&oacute;n secundario del rat&oacute;n en la unidad de disco duro que desea comprobar.</li>
+<li>Haz click en <strong>Propiedades</strong> y, despu&eacute;s, en <strong>Herramientas</strong>.</li>
+<li>En <strong>Comprobaci&oacute;n de errores</strong>, haz click en <strong>Comprobar ahora</strong>. Aparecer&aacute; un cuadro de di&aacute;logo que muestra las <strong>Opciones de comprobaci&oacute;n de disco</strong>.</li>
+<li>Sigue uno de estos procesos:
+<ul class="lista_verificacion">
+<li>Para ejecutar <code>chkdsk</code> en modo de s&oacute;lo lectura, haz click en <strong>Iniciar</strong>.</li>
+<li>Para reparar los errores sin buscar los sectores defectuosos, seleccione la casilla de verificaci&oacute;n <strong>Reparar autom&aacute;ticamente errores en el sistema de archivos</strong> y, a continuaci&oacute;n, haz click en <strong>Iniciar</strong>.</li>
+<li>Para reparar los errores, localizar los sectores defectuosos y recuperar la informaci&oacute;n legible, seleccione la casilla de verificaci&oacute;n <strong>Examinar e intentar recuperar los sectores defectuosos</strong> y, a continuaci&oacute;n, haz click en <strong>Iniciar</strong>.
+<p>&nbsp;</p>
+</li>
+</ul>
+</li>
+</ol></div>
+</div>
+</div>
+</div>
+<p><object type="application/x-shockwave-flash" data="SI06_CONT_R35_1_chequeo_desfrag.swf" style="display: block; margin-left: auto; margin-right: auto;" width="640" height="480"><param name="src" value="SI06_CONT_R35_1_chequeo_desfrag.swf" /></object></p>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="42_monitorizacin_del_sistema_monitor_de_rendimiento.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="44_programacin_de_tareas_de_mantenimiento.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>6.1.- Gestión de procesos por línea de comandos. </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="generator" content="eXeLearning 2.0.4ppa04 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú"}</script>
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Administración básica de Windows</a></li>
+   <li><a href="1_herramientas_administrativas_y_del_sistema.html" class="daddy">1.- Herramientas administrativas y del sistema.</a>
+   <ul class="other-section">
+      <li><a href="11_herramientas_administrativas.html" class="no-ch">1.1.- Herramientas administrativas.</a></li>
+      <li><a href="12_herramientas_del_sistema.html" class="no-ch">1.2.- Herramientas del sistema.</a></li>
+   </ul>
+   </li>
+   <li><a href="2_administracin_de_grupos_y_cuentas_de_usuario_locales.html" class="daddy">2.- Administración de grupos y cuentas de usuario locales.</a>
+   <ul class="other-section">
+      <li><a href="21_tipos_de_cuentas_de_usuario_y_grupos_locales.html" class="no-ch">2.1.- Tipos de cuentas de usuario y grupos locales</a></li>
+      <li><a href="22_gestin_de_cuentas_de_usuario_y_grupos_locales_i.html" class="daddy">2.2.- Gestión de cuentas de usuario y grupos locales (I).</a>
+      <ul class="other-section">
+         <li><a href="221_gestin_de_cuentas_de_usuario_y_grupos_locales_ii.html" class="no-ch">2.2.1.- Gestión de cuentas de usuario y grupos locales (II).</a></li>
+      </ul>
+      </li>
+      <li><a href="23_uac_control_de_cuentas_de_usuario.html" class="no-ch">2.3.- UAC: Control de Cuentas de Usuario.</a></li>
+   </ul>
+   </li>
+   <li><a href="3_administracin_de_seguridad_de_recursos_a_nivel_local.html" class="daddy">3.- Administración de seguridad de recursos a nivel local.</a>
+   <ul class="other-section">
+      <li><a href="31_permisos_de_archivos_y_carpetas_i.html" class="daddy">3.1.- Permisos de archivos y carpetas (I).</a>
+      <ul class="other-section">
+         <li><a href="311_permisos_de_archivos_y_carpetas_ii_herencia.html" class="no-ch">3.1.1.- Permisos de archivos y carpetas (II). Herencia</a></li>
+      </ul>
+      </li>
+      <li><a href="32_directivas_de_seguridad_local_y_directivas_de_grupo_local.html" class="daddy">3.2.- Directivas de seguridad local y Directivas de grupo local.</a>
+      <ul class="other-section">
+         <li><a href="321_directivas_de_seguridad_local.html" class="no-ch">3.2.1.- Directivas de seguridad local.</a></li>
+         <li><a href="322_creacin_de_contraseas.html" class="daddy">3.2.2.- Creación de contraseñas</a>
+         <ul class="other-section">
+            <li><a href="3221_contraseas_robustas.html" class="no-ch">3.2.2.1.- Contraseñas robustas</a></li>
+         </ul>
+         </li>
+         <li><a href="323_directivas_de_grupo_local.html" class="no-ch">3.2.3.- Directivas de grupo local.</a></li>
+      </ul>
+      </li>
+      <li><a href="33_cuotas_de_disco.html" class="no-ch">3.3.- Cuotas de disco</a></li>
+   </ul>
+   </li>
+   <li><a href="4_mantenimiento_del_sistema.html" class="daddy">4.- Mantenimiento del sistema.</a>
+   <ul class="other-section">
+      <li><a href="41_configuracin_de_las_actualizaciones_automticas.html" class="no-ch">4.1.- Configuración de las actualizaciones automáticas.</a></li>
+      <li><a href="42_monitorizacin_del_sistema_monitor_de_rendimiento.html" class="no-ch">4.2.- Monitorización del sistema: Monitor de rendimiento.</a></li>
+      <li><a href="43_desfragmentacin_y_chequeo_de_discos.html" class="no-ch">4.3.- Desfragmentación y chequeo de discos.</a></li>
+      <li><a href="44_programacin_de_tareas_de_mantenimiento.html" class="no-ch">4.4.- Programación de tareas de mantenimiento.</a></li>
+      <li><a href="45_restaurar_el_sistema.html" class="no-ch">4.5.- Restaurar el sistema.</a></li>
+      <li><a href="46_copias_de_seguridad.html" class="no-ch">4.6.- Copias de seguridad.</a></li>
+   </ul>
+   </li>
+   <li><a href="5_uso_de_antivirus_antiespas_y_otros_programas_de_proteccin.html" class="daddy">5.- Uso de antivirus, antiespías y otros programas de protección.</a>
+   <ul class="other-section">
+      <li><a href="51_antivirus.html" class="no-ch">5.1.- Antivirus.</a></li>
+      <li><a href="52_windows_defender.html" class="no-ch">5.2.- Windows Defender.</a></li>
+      <li><a href="53_prevencin_de_ejecucin_de_datos_dep.html" class="no-ch">5.3.- Prevención de ejecución de datos (DEP).</a></li>
+      <li><a href="54_sistema_de_cifrado_de_archivos.html" class="daddy">5.4.- Sistema de cifrado de archivos.</a>
+      <ul class="other-section">
+         <li><a href="541_procesos_de_cifrado_exportacin_e_importacin_de_certificados_efs.html" class="no-ch">5.4.1.- Procesos de cifrado, exportación e importación de certificados EFS.</a></li>
+         <li><a href="542_bitlocker.html" class="no-ch">5.4.2.- Bitlocker.</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="6_gestin_de_procesos_en_windows.html" class="current-page-parent daddy">6. Gestión de procesos en Windows.</a>
+   <ul>
+      <li id="active"><a href="61_gestin_de_procesos_por_lnea_de_comandos.html" class="active no-ch">6.1.- Gestión de procesos por línea de comandos.</a></li>
+   </ul>
+   </li>
+   <li><a href="7_gestin_de_servicios_en_windows.html" class="daddy">7. Gestión de servicios en Windows</a>
+   <ul class="other-section">
+      <li><a href="71_gestin_de_servicios_en_modo_comando.html" class="no-ch">7.1.- Gestión de servicios en modo comando.</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="6_gestin_de_procesos_en_windows.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="7_gestin_de_servicios_en_windows.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">6.1.- Gestión de procesos por línea de comandos.</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id43">
+<div class="iDevice emphasis0">
+<div id="ta43_1" class="block iDevice_content">
+<p>TASKLIST y TASKKILL son dos de los comandos que incluye el ejecutable cmd.exe que resultan muy útiles y nos auxilian cuando nos vemos en problemas en Windows.</p>
+<p>Podemos usarlos directamente en la consola de CMD o Símbolo del sistema, en archivos batch o en scripts, para administrar completamente los procesos y tareas ejecutándose en nuestro equipo.</p>
+<p>Podemos con ellos obtener información y crear listas detalladas, detener aplicaciones, tareas y procesos aun cuando están bloqueados y no responden.<br /> Usarlos es algo sencillo, aun si no se tiene experiencia en el uso de la línea de comandos.<br /> En el artículo relacionamos varios ejemplos prácticos, para copiar y pegar. <br /><br /></p>
+<h3>Utilizar el comando TASKLIST en Windows</h3>
+<p>TASKLIST, (del inglés listar tareas) muestra todas las aplicaciones ejecutándose en el equipo con el número de identidad del proceso (PID).<br /> Es muy sencillo de usar, solo basta introducirlo y a continuación el parámetro necesario.<br /> Si se usa sin ninguna opción muestra una lista similar a la que aparece en la pestaña <em>Procesos</em> del <em>Administrador de tareas</em>.<br /> Se muestra: el nombre del proceso, el PID (número de identidad del proceso) y la memoria usada.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="ventana-comando-tasklist-windows.jpeg" height="224" width="481" /></p>
+<p></p>
+<p><span style="font-size: medium;"><strong>Parámetros para usar con TASKLIST</strong></span></p>
+<p>Los parámetros nos permiten funcionalidades adicionales, los principales son los siguientes:</p>
+<table class="tabla" style="width: 786px; height: 179px;">
+<tbody>
+<tr>
+<td>TASKLIST /V</td>
+<td>Muestra información detallada de cada tarea ejecutándose.</td>
+</tr>
+<tr>
+<td>TASKLIST /SVC</td>
+<td>Muestra información adicional de los servicios hospedados en cada proceso.</td>
+</tr>
+<tr>
+<td>TASKLIST /M modulo</td>
+<td>Muestra todas las tareas que usan un módulo DLL o EXE especificado. Si no se indica el modulo se muestran todos los módulos cargados.</td>
+</tr>
+<tr>
+<td>TASKLIST /FO formato</td>
+<td>Especifica el formato de salida. Puede ser: "TABLE", "LIST", "CSV".</td>
+</tr>
+<tr>
+<td>TASKLIST /NH</td>
+<td>Si se usan los formatos "TABLE" y "CSV", especifica que el "encabezado de columna" no se debe mostrar.</td>
+</tr>
+<tr>
+<td>TASKLIST /FI filtro</td>
+<td>
+<p>Filtra la información que se solicita con un criterio especificado.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Utilizar el comando TASKKILL</h3>
+<p>TASKKILL es un comando que complementa al anterior.<br /> Permite detener tareas o procesos usando el PID (número de identidad del proceso) o el nombre.<br /><br /></p>
+<p><span style="font-size: medium;"><strong>Parámetros para usar con TASKKILL</strong></span></p>
+<table class="tabla">
+<tbody>
+<tr>
+<td>TASKKILL /PID identidadproceso</td>
+<td>Detiene un proceso especificando el número de identidad. Este puede conocerse usando TASKLIST.</td>
+</tr>
+<tr>
+<td>TASKKILL /IM nombreTarea</td>
+<td>Detiene un proceso especificando su nombre.</td>
+</tr>
+<tr>
+<td>TASKKILL /FI filtro</td>
+<td>Permite usar un filtro para seleccionar varias tareas al mismo tiempo.</td>
+</tr>
+<tr>
+<td>TASKKILL /T</td>
+<td>Termina un proceso y todos los procesos secundarios iniciados por él.</td>
+</tr>
+<tr>
+<td>TASKKILL /F</td>
+<td>Especifica que se debe terminar un proceso de forma forzada.</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><iframe width="425" height="350" style="border: 0;" src="//www.youtube.com/embed/e3m_QMsxe6o"></iframe></p>
+<p> </p>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="6_gestin_de_procesos_en_windows.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="7_gestin_de_servicios_en_windows.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+</div>
+</body></html>

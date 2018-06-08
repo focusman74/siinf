@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>7. Gestión de servicios en Windows </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="generator" content="eXeLearning 2.0.4ppa04 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú"}</script>
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Administración básica de Windows</a></li>
+   <li><a href="1_herramientas_administrativas_y_del_sistema.html" class="daddy">1.- Herramientas administrativas y del sistema.</a>
+   <ul class="other-section">
+      <li><a href="11_herramientas_administrativas.html" class="no-ch">1.1.- Herramientas administrativas.</a></li>
+      <li><a href="12_herramientas_del_sistema.html" class="no-ch">1.2.- Herramientas del sistema.</a></li>
+   </ul>
+   </li>
+   <li><a href="2_administracin_de_grupos_y_cuentas_de_usuario_locales.html" class="daddy">2.- Administración de grupos y cuentas de usuario locales.</a>
+   <ul class="other-section">
+      <li><a href="21_tipos_de_cuentas_de_usuario_y_grupos_locales.html" class="no-ch">2.1.- Tipos de cuentas de usuario y grupos locales</a></li>
+      <li><a href="22_gestin_de_cuentas_de_usuario_y_grupos_locales_i.html" class="daddy">2.2.- Gestión de cuentas de usuario y grupos locales (I).</a>
+      <ul class="other-section">
+         <li><a href="221_gestin_de_cuentas_de_usuario_y_grupos_locales_ii.html" class="no-ch">2.2.1.- Gestión de cuentas de usuario y grupos locales (II).</a></li>
+      </ul>
+      </li>
+      <li><a href="23_uac_control_de_cuentas_de_usuario.html" class="no-ch">2.3.- UAC: Control de Cuentas de Usuario.</a></li>
+   </ul>
+   </li>
+   <li><a href="3_administracin_de_seguridad_de_recursos_a_nivel_local.html" class="daddy">3.- Administración de seguridad de recursos a nivel local.</a>
+   <ul class="other-section">
+      <li><a href="31_permisos_de_archivos_y_carpetas_i.html" class="daddy">3.1.- Permisos de archivos y carpetas (I).</a>
+      <ul class="other-section">
+         <li><a href="311_permisos_de_archivos_y_carpetas_ii_herencia.html" class="no-ch">3.1.1.- Permisos de archivos y carpetas (II). Herencia</a></li>
+      </ul>
+      </li>
+      <li><a href="32_directivas_de_seguridad_local_y_directivas_de_grupo_local.html" class="daddy">3.2.- Directivas de seguridad local y Directivas de grupo local.</a>
+      <ul class="other-section">
+         <li><a href="321_directivas_de_seguridad_local.html" class="no-ch">3.2.1.- Directivas de seguridad local.</a></li>
+         <li><a href="322_creacin_de_contraseas.html" class="daddy">3.2.2.- Creación de contraseñas</a>
+         <ul class="other-section">
+            <li><a href="3221_contraseas_robustas.html" class="no-ch">3.2.2.1.- Contraseñas robustas</a></li>
+         </ul>
+         </li>
+         <li><a href="323_directivas_de_grupo_local.html" class="no-ch">3.2.3.- Directivas de grupo local.</a></li>
+      </ul>
+      </li>
+      <li><a href="33_cuotas_de_disco.html" class="no-ch">3.3.- Cuotas de disco</a></li>
+   </ul>
+   </li>
+   <li><a href="4_mantenimiento_del_sistema.html" class="daddy">4.- Mantenimiento del sistema.</a>
+   <ul class="other-section">
+      <li><a href="41_configuracin_de_las_actualizaciones_automticas.html" class="no-ch">4.1.- Configuración de las actualizaciones automáticas.</a></li>
+      <li><a href="42_monitorizacin_del_sistema_monitor_de_rendimiento.html" class="no-ch">4.2.- Monitorización del sistema: Monitor de rendimiento.</a></li>
+      <li><a href="43_desfragmentacin_y_chequeo_de_discos.html" class="no-ch">4.3.- Desfragmentación y chequeo de discos.</a></li>
+      <li><a href="44_programacin_de_tareas_de_mantenimiento.html" class="no-ch">4.4.- Programación de tareas de mantenimiento.</a></li>
+      <li><a href="45_restaurar_el_sistema.html" class="no-ch">4.5.- Restaurar el sistema.</a></li>
+      <li><a href="46_copias_de_seguridad.html" class="no-ch">4.6.- Copias de seguridad.</a></li>
+   </ul>
+   </li>
+   <li><a href="5_uso_de_antivirus_antiespas_y_otros_programas_de_proteccin.html" class="daddy">5.- Uso de antivirus, antiespías y otros programas de protección.</a>
+   <ul class="other-section">
+      <li><a href="51_antivirus.html" class="no-ch">5.1.- Antivirus.</a></li>
+      <li><a href="52_windows_defender.html" class="no-ch">5.2.- Windows Defender.</a></li>
+      <li><a href="53_prevencin_de_ejecucin_de_datos_dep.html" class="no-ch">5.3.- Prevención de ejecución de datos (DEP).</a></li>
+      <li><a href="54_sistema_de_cifrado_de_archivos.html" class="daddy">5.4.- Sistema de cifrado de archivos.</a>
+      <ul class="other-section">
+         <li><a href="541_procesos_de_cifrado_exportacin_e_importacin_de_certificados_efs.html" class="no-ch">5.4.1.- Procesos de cifrado, exportación e importación de certificados EFS.</a></li>
+         <li><a href="542_bitlocker.html" class="no-ch">5.4.2.- Bitlocker.</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="6_gestin_de_procesos_en_windows.html" class="daddy">6. Gestión de procesos en Windows.</a>
+   <ul class="other-section">
+      <li><a href="61_gestin_de_procesos_por_lnea_de_comandos.html" class="no-ch">6.1.- Gestión de procesos por línea de comandos.</a></li>
+   </ul>
+   </li>
+   <li id="active"><a href="7_gestin_de_servicios_en_windows.html" class="active daddy">7. Gestión de servicios en Windows</a>
+   <ul>
+      <li><a href="71_gestin_de_servicios_en_modo_comando.html" class="no-ch">7.1.- Gestión de servicios en modo comando.</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="61_gestin_de_procesos_por_lnea_de_comandos.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="71_gestin_de_servicios_en_modo_comando.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">7. Gestión de servicios en Windows</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id43">
+<div class="iDevice emphasis0">
+<div id="ta43_1" class="block iDevice_content">
+<p align="LEFT">Los servicios son programas que son iniciados por el propio sistema operativo sin que intervenga para nada el usuario. Estos programas se inician en cuanto arranca el equipo sin que sea necesario que se valide ningún usuario o entre en el sistema, ejecutándose en segundo plano (background en inglés).</p>
+<p align="LEFT">Para acceder a los servicios de Windows debemos ir a: <strong>Panel de Control</strong> → <strong>Herramientas administrativas</strong> → <strong>Servicios</strong>, o también: <strong>Inicio</strong> → <strong>Ejecutar</strong> → Escribimos <strong>services.msc</strong>.</p>
+<p style="text-align: center;" align="LEFT"><a href="EM03_CONT_R07_Servicios.1.jpg"><img src="EM03_CONT_R07_Servicios.jpg" class="imagen_ampliable" /></a></p>
+<p align="LEFT"><img src="SI06_CONT_R32_servicios.png" style="float: right; margin-left: 15px; margin-right: 15px;" height="172" width="160" />Esta herramienta te muestra un listado de los procesos junto con su descripción, el tipo de inicio y otras características. Además de permitir la consulta, también se pueden iniciar o desactivar los servicios que se ejecutan en <span lang="en">Windows</span>. A continuación, ponemos un listado de ejemplo de algunos servicios y su función que podemos encontrarnos en la herramienta Servicios:</p>
+<ul class="lista_verificacion">
+<li>Servicios de Escritorio remoto - <code>TermService</code>, - <code>SessionEnv</code>, - <code>UmRdpService</code></li>
+<li>Tarjeta inteligente - <code>SCardSvr</code><em>:</em> Administra el acceso a tarjetas inteligentes.</li>
+<li>Registro remoto - <code>RemoteRegistry</code><em>:</em> Modificar registro a usuarios remotos.</li>
+<li>Ubicador de llamada a procedimiento remoto - <code>RpcLocator</code></li>
+<li><span lang="en">Windows Search</span><em> - </em><code>WSearch</code><em>:</em> Indexa los archivos, el correo electrónico y otros contenidos para hacer búsquedas con más rapidez.</li>
+<li>Servicio del Reproductor de Windows Media - <code>WMPNetworkSvc</code><em>:</em> Comparte las bibliotecas del Reproductor de <span lang="en">Windows</span> Media con otros dispositivos.</li>
+<li>Tarjetas inteligentes - <code>SCPolicySvc</code><em>:</em> Permite configurar el sistema para bloquear el escritorio al extraer la tarjeta inteligente.</li>
+<li>Parental Controls - <code>WPCSvc</code><em>:</em> Control parental.</li>
+<li>Archivos sin conexión - <code>CscService</code><em>:</em> Realiza actividades de mantenimiento en la caché de archivos sin conexión.</li>
+<li>Agente de Protección de acceso a redes - <code>napagent</code><em>:</em> Administra información de los equipos de una red.</li>
+<li><span lang="en">Net Logon</span> - <code>Netlogon</code><em>:</em> Autentica usuarios y servicios.</li>
+<li>Servicio del iniciador iSCSI de Microsoft - <code>MSiSCSI</code></li>
+<li>Aplicación auxiliar <acronym title="Internet protocol." lang="en">IP</acronym> - <code>iphlpsvc</code></li>
+<li>Cliente de seguimiento de vínculos distribuidos - <code>TrkWks</code><em>:</em>Mantiene los vínculos entre archivos NTFS dentro de un equipo o entre equipos de una red.</li>
+<li>Propagación de certificados - <code>CertPropSvc</code></li>
+<li><span lang="en">BranchCache</span> - <code>PeerDistSvc</code>: Caché del contenido de la red en red local.</li>
+<li>Servicio de compatibilidad con <span lang="en">Bluetooth</span> - <code>bthserv</code>: Permite la detección y asociación de dispositivos <span lang="en">Bluetooth</span> remotos.</li>
+<li>Servicio de detección automática de proxy web <acronym title="Windows HTTP Services." lang="en">WinHTTP</acronym> - <code>WinHttpAutoProxySvc</code></li>
+<li>Servicio Informe de errores de <span lang="en">Windows</span> - <code>WerSvc</code>, Envío de informes sobre los errores a Microsoft.</li>
+<li>Servicio Cifrado de unidad <span lang="en">BitLocker</span> - <code>BDESVC</code></li>
+<li>Sistema de cifrado de archivos - <code>EFS</code>, para almacenar archivos cifrados en particiones NTFS.</li>
+<li>Fax - <code>Fax</code></li>
+<li>Acceso a dispositivo de interfaz humana - <code>hidserv</code></li>
+</ul>
+<p align="LEFT">Con esta herramienta podremos iniciar y parar servicios del sistema según nuestras necesidades.</p>
+<p align="LEFT">Los servicios pueden encontrarse en 2 estados posibles:</p>
+<ol>
+<li><strong>Iniciados o ejecutándose:</strong> están funcionando y consumiendo recursos actualmente del equipo.</li>
+<li class="_mce_tagged_br"><strong>Detenidos:</strong> no están ejecutándose por lo que no consumen recursos del equipo.</li>
+</ol>
+<p align="LEFT">Para gestionar los servicios tenemos 4 opciones en “Tipo de inicio”:</p>
+<ol>
+<li><strong>Automático (inicio retrasado):</strong> se inicia con el sistema, pero espera a que Windows esté cargado para ejecutarse.</li>
+<li class="_mce_tagged_br"><strong>Automático:</strong> se inicia con el sistema operativo.</li>
+<li class="_mce_tagged_br"><strong>Manual:</strong> se inicia sólo cuando es solicitado.</li>
+<li class="_mce_tagged_br"><strong>Deshabilitado:</strong> no se inicia bajo ningún concepto.</li>
+</ol>
+<p></p>
+<p align="LEFT">En el siguiente vídeo puedes ver como configurar los servicios disponibles en Windows 7:</p>
+<p style="text-align: center;" align="LEFT"><iframe width="640" height="360" style="border: 0;" src="//www.youtube.com/embed/3EtK_S4WCHE"></iframe></p>
+<p align="LEFT"> </p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper RecomendacionfpdIdevice em_iDevice" id="id44">
+<div class="iDevice emphasis_recomendacionfpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Recomendación</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta44_46" class="block iDevice_content">
+<p align="LEFT">Puesto que los servicios son aplicaciones del sistema, debes tener cuidado a la hora de deshabilitarlos, pues algunos son necesarios para el correcto funcionamiento del sistema operativo. Si sabemos qu&eacute; servicios no necesitamos es recomendable pararlos para mejorar el rendimiento del equipo.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ParasabermasfpdIdevice em_iDevice" id="id45">
+<div class="iDevice emphasis_parasabermasfpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Para saber más</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta45_43" class="block iDevice_content">
+<p>Si quieres optimizar tu sistema Windows 7 puedes ver en el siguiente artículo qué servicios podemos deshabilitar:</p>
+<p style="text-align: center;"><a href="http://trucos-y-programas.blogspot.com.es/2013/12/deshabilitar-servicios-innecesarios-en.html">Desactivar servicios innecesarios en Windows 7</a><a title="Acceder al tutorial sobre que servicios pueden ser desactivados en Windows 7." href="http://www.taringa.net/posts/info/3766717/Para-Windows-7---Desactivar-servicios-inecesarios_.html" target="_blank"><br /></a></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="61_gestin_de_procesos_por_lnea_de_comandos.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="71_gestin_de_servicios_en_modo_comando.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>7.1.- Gestión de servicios en modo comando. </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="generator" content="eXeLearning 2.0.4ppa04 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú"}</script>
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Administración básica de Windows</a></li>
+   <li><a href="1_herramientas_administrativas_y_del_sistema.html" class="daddy">1.- Herramientas administrativas y del sistema.</a>
+   <ul class="other-section">
+      <li><a href="11_herramientas_administrativas.html" class="no-ch">1.1.- Herramientas administrativas.</a></li>
+      <li><a href="12_herramientas_del_sistema.html" class="no-ch">1.2.- Herramientas del sistema.</a></li>
+   </ul>
+   </li>
+   <li><a href="2_administracin_de_grupos_y_cuentas_de_usuario_locales.html" class="daddy">2.- Administración de grupos y cuentas de usuario locales.</a>
+   <ul class="other-section">
+      <li><a href="21_tipos_de_cuentas_de_usuario_y_grupos_locales.html" class="no-ch">2.1.- Tipos de cuentas de usuario y grupos locales</a></li>
+      <li><a href="22_gestin_de_cuentas_de_usuario_y_grupos_locales_i.html" class="daddy">2.2.- Gestión de cuentas de usuario y grupos locales (I).</a>
+      <ul class="other-section">
+         <li><a href="221_gestin_de_cuentas_de_usuario_y_grupos_locales_ii.html" class="no-ch">2.2.1.- Gestión de cuentas de usuario y grupos locales (II).</a></li>
+      </ul>
+      </li>
+      <li><a href="23_uac_control_de_cuentas_de_usuario.html" class="no-ch">2.3.- UAC: Control de Cuentas de Usuario.</a></li>
+   </ul>
+   </li>
+   <li><a href="3_administracin_de_seguridad_de_recursos_a_nivel_local.html" class="daddy">3.- Administración de seguridad de recursos a nivel local.</a>
+   <ul class="other-section">
+      <li><a href="31_permisos_de_archivos_y_carpetas_i.html" class="daddy">3.1.- Permisos de archivos y carpetas (I).</a>
+      <ul class="other-section">
+         <li><a href="311_permisos_de_archivos_y_carpetas_ii_herencia.html" class="no-ch">3.1.1.- Permisos de archivos y carpetas (II). Herencia</a></li>
+      </ul>
+      </li>
+      <li><a href="32_directivas_de_seguridad_local_y_directivas_de_grupo_local.html" class="daddy">3.2.- Directivas de seguridad local y Directivas de grupo local.</a>
+      <ul class="other-section">
+         <li><a href="321_directivas_de_seguridad_local.html" class="no-ch">3.2.1.- Directivas de seguridad local.</a></li>
+         <li><a href="322_creacin_de_contraseas.html" class="daddy">3.2.2.- Creación de contraseñas</a>
+         <ul class="other-section">
+            <li><a href="3221_contraseas_robustas.html" class="no-ch">3.2.2.1.- Contraseñas robustas</a></li>
+         </ul>
+         </li>
+         <li><a href="323_directivas_de_grupo_local.html" class="no-ch">3.2.3.- Directivas de grupo local.</a></li>
+      </ul>
+      </li>
+      <li><a href="33_cuotas_de_disco.html" class="no-ch">3.3.- Cuotas de disco</a></li>
+   </ul>
+   </li>
+   <li><a href="4_mantenimiento_del_sistema.html" class="daddy">4.- Mantenimiento del sistema.</a>
+   <ul class="other-section">
+      <li><a href="41_configuracin_de_las_actualizaciones_automticas.html" class="no-ch">4.1.- Configuración de las actualizaciones automáticas.</a></li>
+      <li><a href="42_monitorizacin_del_sistema_monitor_de_rendimiento.html" class="no-ch">4.2.- Monitorización del sistema: Monitor de rendimiento.</a></li>
+      <li><a href="43_desfragmentacin_y_chequeo_de_discos.html" class="no-ch">4.3.- Desfragmentación y chequeo de discos.</a></li>
+      <li><a href="44_programacin_de_tareas_de_mantenimiento.html" class="no-ch">4.4.- Programación de tareas de mantenimiento.</a></li>
+      <li><a href="45_restaurar_el_sistema.html" class="no-ch">4.5.- Restaurar el sistema.</a></li>
+      <li><a href="46_copias_de_seguridad.html" class="no-ch">4.6.- Copias de seguridad.</a></li>
+   </ul>
+   </li>
+   <li><a href="5_uso_de_antivirus_antiespas_y_otros_programas_de_proteccin.html" class="daddy">5.- Uso de antivirus, antiespías y otros programas de protección.</a>
+   <ul class="other-section">
+      <li><a href="51_antivirus.html" class="no-ch">5.1.- Antivirus.</a></li>
+      <li><a href="52_windows_defender.html" class="no-ch">5.2.- Windows Defender.</a></li>
+      <li><a href="53_prevencin_de_ejecucin_de_datos_dep.html" class="no-ch">5.3.- Prevención de ejecución de datos (DEP).</a></li>
+      <li><a href="54_sistema_de_cifrado_de_archivos.html" class="daddy">5.4.- Sistema de cifrado de archivos.</a>
+      <ul class="other-section">
+         <li><a href="541_procesos_de_cifrado_exportacin_e_importacin_de_certificados_efs.html" class="no-ch">5.4.1.- Procesos de cifrado, exportación e importación de certificados EFS.</a></li>
+         <li><a href="542_bitlocker.html" class="no-ch">5.4.2.- Bitlocker.</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="6_gestin_de_procesos_en_windows.html" class="daddy">6. Gestión de procesos en Windows.</a>
+   <ul class="other-section">
+      <li><a href="61_gestin_de_procesos_por_lnea_de_comandos.html" class="no-ch">6.1.- Gestión de procesos por línea de comandos.</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="7_gestin_de_servicios_en_windows.html" class="current-page-parent daddy">7. Gestión de servicios en Windows</a>
+   <ul>
+      <li id="active"><a href="71_gestin_de_servicios_en_modo_comando.html" class="active no-ch">7.1.- Gestión de servicios en modo comando.</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="7_gestin_de_servicios_en_windows.html" class="prev"><span>&laquo; </span>Anterior</a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">7.1.- Gestión de servicios en modo comando.</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id41">
+<div class="iDevice emphasis0">
+<div id="ta41_1" class="block iDevice_content">
+<p>Vamos a ver como parar y arrancar los servicios desde línea de comandos en un sistema Windows 7.</p>
+<p>Tenemos varias opciones para parar y arrancar servicios:</p>
+<ul>
+<li>Comando <strong>net</strong>.</li>
+<li>Comando <strong>sc</strong>.</li>
+<li>Comandos <strong>Netsvc.exe</strong> e <strong>Instsrv.exe</strong> para trabajar con un equipo remoto.</li>
+</ul>
+<h1><span style="font-size: medium;">Comando NET</span></h1>
+<p><strong>NET</strong> es una utilidad del sistema operativo windows Win2k y XP que sirve para acceder a servicios de red. Permite hacer muchísimas cosas y entre ellas está la posibilidad de arrancar y parar un servicio.</p>
+<ul>
+<li>Para ver los servicios iniciados: <strong>Net start</strong></li>
+<li>Para iniciar un servicio: <strong>Net start &lt;nombre_del_servicio&gt;</strong></li>
+<li>Para detener un servicio: <strong>Net stop &lt;nombre_del_servicio&gt;</strong></li>
+<li>Para pausar un servicio: <strong>Net pause &lt;nombre_del_servicio&gt;</strong></li>
+<li>Para reanudar un servicio: <strong>Net continue &lt;nombre_del_servicio&gt;</strong></li>
+</ul>
+<p>Ejemplo:</p>
+<pre><span style="font-size: small;"><span style="font-size: small;"></span></span></pre>
+<pre><span style="font-size: small;"></span></pre>
+<pre><span style="font-size: small;"></span></pre>
+<div style="margin: 1em 0.5em 0em 2em; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 2px; background: #ffe9e9; text-align: left; font-size: 105%; font-family: monospace; font-weight: bold; min-height: 48px;">
+<div style="float: left;"><span class="image"><img src="cmd_win.png" height="64" width="64" /></span></div>
+<div style="margin-left: 55px;"> </div>
+<div style="margin-left: 55px;">&gt;net stop "Actualizaciones automáticas"<br />El servicio de Actualizaciones automáticas está deteniéndose.<br />El servicio de Actualizaciones automáticas fue detenido con éxito.
+<p> &gt;net start "Actualizaciones automáticas"<br /> El servicio de Actualizaciones automáticas está iniciándose.<br /> El servicio de Actualizaciones automáticas se ha iniciado con éxito.</p>
+</div>
+<div style="margin-left: 55px;"> </div>
+</div>
+<pre><span style="font-size: small;"></span></pre>
+<pre><span style="font-size: small;"></span></pre>
+<pre><span style="font-size: small;"></span></pre>
+<p></p>
+<p><span style="color: #000000;"><b> </b></span></p>
+<p><span style="color: #000000;"><b>NOTA:</b> Con NET se puede usar tanto el nombre del servicio como el nombre para mostrar (“Actualizaciones Automáticas” y “wuauserv”).</span></p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id42">
+<div class="iDevice emphasis0">
+<div id="ta42_85" class="block iDevice_content">
+<h1><span style="font-size: medium;">Comando SC</span></h1>
+<p><strong>Sc.exe</strong>, que se incluye en el Kit de recursos de Windows XP y viene de serie en Windows 7, implementa llamadas a todas las funciones de la interfaz de programación de aplicaciones (API) de control de servicios de Windows a través de la línea de comandos.</p>
+<p>Con este comando se puede mostrar el estado de los servicios, pararlos, arrancarlos, recuperar los valores almacenados en los campos de estructura de estado, etc.</p>
+<p>También permite especificar el nombre de un equipo remoto para trabajar con los servicios de forma remota.</p>
+<p>La sintaxis del comando es:</p>
+<p style="text-align: center;"><strong> <strong>sc [nombreDeServidor] Comando nombreDeServicio [nombreDeOpción = valorDeOpción...]</strong></strong></p>
+<p style="text-align: left;">Así tenemos:</p>
+<ul>
+<li>Para iniciar un servicio: <strong>sc start &lt;nombre_del_servicio&gt;</strong></li>
+<li>Para detener un servicio: <strong>sc stop &lt;nombre_del_servicio&gt;</strong></li>
+<li>Para consultar los servicios corriendo: <strong>sc query</strong></li>
+</ul>
+<p>Ejemplo:<strong></strong></p>
+<div style="margin: 1em 0.5em 0em 2em; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 2px; background: #ffe9e9; text-align: left; font-size: 105%; font-family: monospace; font-weight: bold; min-height: 48px;">
+<div style="float: left;"><span class="image"><img src="cmd_win.png" width="48" /></span></div>
+<div style="margin-left: 55px;"> </div>
+<div style="margin-left: 55px;">&gt;sc start wuauserv
+<p>SERVICE_NAME: wuauserv</p>
+<p>TYPE : 20 WIN32_SHARE_PROCESS<br />STATE : 2 START_PENDING<br />(NOT_STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)<br />WIN32_EXIT_CODE : 0 (0x0)<br />SERVICE_EXIT_CODE : 0 (0x0)<br />CHECKPOINT : 0x0<br />WAIT_HINT : 0x7d0<br />PID : 1356<br />FLAGS :</p>
+<p>&gt;sc stop wuauserv<br />SERVICE_NAME: wuauserv<br />TYPE : 20 WIN32_SHARE_PROCESS<br />STATE : 3 STOP_PENDING<br />(NOT_STOPPABLE,NOT_PAUSABLE,IGNORES_SHUTDOWN)<br />WIN32_EXIT_CODE : 0 (0x0)<br />SERVICE_EXIT_CODE : 0 (0x0)<br />CHECKPOINT : 0x1<br />WAIT_HINT : 0x7530</p>
+<p></p>
+</div>
+<div style="margin-left: 55px;"> </div>
+</div>
+<p><span style="color: #000000;"> </span></p>
+<p></p>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="7_gestin_de_servicios_en_windows.html" class="prev"><span>&laquo; </span>Anterior</a>
+</nav>
+</div>
+</div>
+</body></html>

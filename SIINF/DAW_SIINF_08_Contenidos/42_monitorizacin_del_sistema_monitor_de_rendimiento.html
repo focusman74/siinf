@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>4.2.- Monitorización del sistema: Monitor de rendimiento. </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="generator" content="eXeLearning 2.0.4ppa04 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú"}</script>
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Administración básica de Windows</a></li>
+   <li><a href="1_herramientas_administrativas_y_del_sistema.html" class="daddy">1.- Herramientas administrativas y del sistema.</a>
+   <ul class="other-section">
+      <li><a href="11_herramientas_administrativas.html" class="no-ch">1.1.- Herramientas administrativas.</a></li>
+      <li><a href="12_herramientas_del_sistema.html" class="no-ch">1.2.- Herramientas del sistema.</a></li>
+   </ul>
+   </li>
+   <li><a href="2_administracin_de_grupos_y_cuentas_de_usuario_locales.html" class="daddy">2.- Administración de grupos y cuentas de usuario locales.</a>
+   <ul class="other-section">
+      <li><a href="21_tipos_de_cuentas_de_usuario_y_grupos_locales.html" class="no-ch">2.1.- Tipos de cuentas de usuario y grupos locales</a></li>
+      <li><a href="22_gestin_de_cuentas_de_usuario_y_grupos_locales_i.html" class="daddy">2.2.- Gestión de cuentas de usuario y grupos locales (I).</a>
+      <ul class="other-section">
+         <li><a href="221_gestin_de_cuentas_de_usuario_y_grupos_locales_ii.html" class="no-ch">2.2.1.- Gestión de cuentas de usuario y grupos locales (II).</a></li>
+      </ul>
+      </li>
+      <li><a href="23_uac_control_de_cuentas_de_usuario.html" class="no-ch">2.3.- UAC: Control de Cuentas de Usuario.</a></li>
+   </ul>
+   </li>
+   <li><a href="3_administracin_de_seguridad_de_recursos_a_nivel_local.html" class="daddy">3.- Administración de seguridad de recursos a nivel local.</a>
+   <ul class="other-section">
+      <li><a href="31_permisos_de_archivos_y_carpetas_i.html" class="daddy">3.1.- Permisos de archivos y carpetas (I).</a>
+      <ul class="other-section">
+         <li><a href="311_permisos_de_archivos_y_carpetas_ii_herencia.html" class="no-ch">3.1.1.- Permisos de archivos y carpetas (II). Herencia</a></li>
+      </ul>
+      </li>
+      <li><a href="32_directivas_de_seguridad_local_y_directivas_de_grupo_local.html" class="daddy">3.2.- Directivas de seguridad local y Directivas de grupo local.</a>
+      <ul class="other-section">
+         <li><a href="321_directivas_de_seguridad_local.html" class="no-ch">3.2.1.- Directivas de seguridad local.</a></li>
+         <li><a href="322_creacin_de_contraseas.html" class="daddy">3.2.2.- Creación de contraseñas</a>
+         <ul class="other-section">
+            <li><a href="3221_contraseas_robustas.html" class="no-ch">3.2.2.1.- Contraseñas robustas</a></li>
+         </ul>
+         </li>
+         <li><a href="323_directivas_de_grupo_local.html" class="no-ch">3.2.3.- Directivas de grupo local.</a></li>
+      </ul>
+      </li>
+      <li><a href="33_cuotas_de_disco.html" class="no-ch">3.3.- Cuotas de disco</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="4_mantenimiento_del_sistema.html" class="current-page-parent daddy">4.- Mantenimiento del sistema.</a>
+   <ul>
+      <li><a href="41_configuracin_de_las_actualizaciones_automticas.html" class="no-ch">4.1.- Configuración de las actualizaciones automáticas.</a></li>
+      <li id="active"><a href="42_monitorizacin_del_sistema_monitor_de_rendimiento.html" class="active no-ch">4.2.- Monitorización del sistema: Monitor de rendimiento.</a></li>
+      <li><a href="43_desfragmentacin_y_chequeo_de_discos.html" class="no-ch">4.3.- Desfragmentación y chequeo de discos.</a></li>
+      <li><a href="44_programacin_de_tareas_de_mantenimiento.html" class="no-ch">4.4.- Programación de tareas de mantenimiento.</a></li>
+      <li><a href="45_restaurar_el_sistema.html" class="no-ch">4.5.- Restaurar el sistema.</a></li>
+      <li><a href="46_copias_de_seguridad.html" class="no-ch">4.6.- Copias de seguridad.</a></li>
+   </ul>
+   </li>
+   <li><a href="5_uso_de_antivirus_antiespas_y_otros_programas_de_proteccin.html" class="daddy">5.- Uso de antivirus, antiespías y otros programas de protección.</a>
+   <ul class="other-section">
+      <li><a href="51_antivirus.html" class="no-ch">5.1.- Antivirus.</a></li>
+      <li><a href="52_windows_defender.html" class="no-ch">5.2.- Windows Defender.</a></li>
+      <li><a href="53_prevencin_de_ejecucin_de_datos_dep.html" class="no-ch">5.3.- Prevención de ejecución de datos (DEP).</a></li>
+      <li><a href="54_sistema_de_cifrado_de_archivos.html" class="daddy">5.4.- Sistema de cifrado de archivos.</a>
+      <ul class="other-section">
+         <li><a href="541_procesos_de_cifrado_exportacin_e_importacin_de_certificados_efs.html" class="no-ch">5.4.1.- Procesos de cifrado, exportación e importación de certificados EFS.</a></li>
+         <li><a href="542_bitlocker.html" class="no-ch">5.4.2.- Bitlocker.</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="6_gestin_de_procesos_en_windows.html" class="daddy">6. Gestión de procesos en Windows.</a>
+   <ul class="other-section">
+      <li><a href="61_gestin_de_procesos_por_lnea_de_comandos.html" class="no-ch">6.1.- Gestión de procesos por línea de comandos.</a></li>
+   </ul>
+   </li>
+   <li><a href="7_gestin_de_servicios_en_windows.html" class="daddy">7. Gestión de servicios en Windows</a>
+   <ul class="other-section">
+      <li><a href="71_gestin_de_servicios_en_modo_comando.html" class="no-ch">7.1.- Gestión de servicios en modo comando.</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="41_configuracin_de_las_actualizaciones_automticas.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="43_desfragmentacin_y_chequeo_de_discos.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">4.2.- Monitorización del sistema: Monitor de rendimiento.</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id212">
+<div class="iDevice emphasis0">
+<div id="ta212_1" class="block iDevice_content">
+<div id="id28" class="FreeTextfpdIdevice">
+<div class="iDevice emphasis0">
+<div id="ta28_73" class="block" style="display: block;"><img alt="Gr&aacute;fica de barras con 4 barras azul, verde, naranja y roja" class="elemento_derecha" src="SI06_CONT_R27_rto.png" title="Gr&aacute;fica rendimiento" height="160" width="160" />
+<p><span lang="en">Windows</span> 7 proporciona una herramienta para <a class="glosario" title="Ver la definici&oacute;n de &quot;Monitorizar&quot; (Se abre en una nueva ventana)">monitorizar</a> el rendimiento de ciertos componentes del sistema. Hablamos del Monitor de rendimiento, con el que se puede visualizar la evoluci&oacute;n del rendimiento en una gr&aacute;fica actualizada en tiempo real. Adem&aacute;s, con este monitor podemos realizar un seguimiento del comportamiento de elementos como el procesador, la memoria, el disco duro, el rendimiento de la red, o componentes del sistema m&aacute;s concretos como la funci&oacute;n <a class="glosario" title="Ver la definici&oacute;n de &quot;Readyboost&quot; (Se abre en una nueva ventana)" lang="EN">Readyboost</a> y otros componentes de <span lang="en">Windows</span>.</p>
+<p>Desde una &uacute;nica consola podemos supervisar el rendimiento de las aplicaciones y del hardware en tiempo real, personalizar qu&eacute; datos desea recopilar en los registros, definir umbrales para alertas y acciones autom&aacute;ticas, generar informes y ver datos de rendimientos pasados en una gran variedad de formas.</p>
+<p>El Monitor de rendimiento de <span lang="en">Windows</span> proporciona una interfaz gr&aacute;fica para la personalizaci&oacute;n de conjuntos de recopiladores de datos y sesiones de seguimiento de eventos. La recopilaci&oacute;n de datos y el registro se realiza mediante conjuntos de recopiladores de datos.</p>
+<p>Veamos paso a paso c&oacute;mo podemos configurar este monitor para que visualice el rendimiento en tiempo real de los aspectos que nos interesan con el objeto de localizar errores o componentes que est&aacute;n ralentizando nuestro PC.</p>
+<ol>
+<li><strong>Abrir el Monitor de rendimiento</strong>
+<p>El primer paso ser&aacute; ejecutar el monitor de rendimiento del sistema. <strong>Para iniciar el</strong><strong> Monitor de rendimiento de <span lang="en">Windows</span> tenemos varias opciones:</strong></p>
+<ul class="lista_verificacion">
+<li><strong>Ir al Panel de Control - Sistema y Seguridad - Herramientas administrativas - Monitor de rendimiento.</strong></li>
+<li><strong>O hacer click en Inicio</strong>, despu&eacute;s click en el cuadro <strong>Iniciar b&uacute;squeda</strong>, escribimos monitor y presionamos la tecla Enter.</li>
+</ul>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Ampliar imagen." href="SI06_CONT_R28_monitor_rto.png"><img alt="Localiza el acceso al monitor de rendimiento de Windows 7 desde el cuadro de Ejecutar escribiendo el comienzo del nombre de la herramienta, aparece el texto mon de monitor." class="imagen_ampliable" src="SI06_CONT_R28_monitor_rto_miniatura.PNG" style="width: 160px; height: 200px;" title="Acceso al monitor de rendimiento de Windows 7" height="200" width="160" /></a></div>
+</div>
+</li>
+<li><strong>Acceder al monitor</strong>
+<p>En la ventana aparecer&aacute; un resumen del estado del sistema y una descripci&oacute;n de su funcionamiento. En la parte central en el apartado <strong>Resumen del sistema </strong>podremos ver en tiempo real el funcionamiento de algunos componentes del sistema. Para acceder a las gr&aacute;ficas de funcionamiento haremos click en la parte izquierda de la ventana en <strong>Monitor de rendimiento </strong>dentro de la carpeta <strong>Herramientas de supervisi&oacute;n</strong>. Veremos en pantalla una gr&aacute;fica resumen de los elementos m&aacute;s importantes.</p>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Ampliar imagen." href="SI06_CONT_R29_monitor_rto.png"><img alt="muestra el onitor de rendimiento de Windows 7 con una gr&aacute;fica donde ve una l&iacute;nea roja que indica el porcentaje de tiempo del procesador." class="imagen_ampliable" src="SI06_CONT_R29_monitor_rto_miniatura.PNG" style="width: 196px; height: 136px;" title="monitor de rendimiento de Windows 7" /></a></div>
+</div>
+</li>
+<li><strong> Agregar componentes para monitorizaci&oacute;n</strong>
+<p>El siguiente paso ser&aacute; agregar componentes que van a ser monitorizados. Hay que tener en cuenta que cuantos m&aacute;s componentes agreguemos m&aacute;s confusa ser&aacute; la gr&aacute;fica que se mostrar&aacute;. Para conseguir agregarlos haremos click sobre <strong>el s&iacute;mbolo m&aacute;s de color verde </strong>que se encuentra sobre la gr&aacute;fica junto con otros iconos. Aparecer&aacute; una ventana dividida en tres partes.</p>
+<p>En la parte superior izquierda seleccionaremos los componentes que vamos a monitorizar. Podemos ver desglosados los elementos analizados de cada componente si hacemos click en la flecha que apunta hacia abajo junto a cada uno de los contadores. En la parte llamada <strong>Instancias del objeto seleccionado </strong>podemos elegir que se controle una instancia concreta haciendo click sobre ella.</p>
+<p>Tambi&eacute;n es posible controlar cada una de las instancias o que se contabilice el total. Si vamos a monitorizar varios componentes, es mejor elegir <strong>Total </strong>si es posible<strong>.</strong> Podemos ir agregando contadores pulsando sobre <strong>Agregar</strong>. De esta forma aparecer&aacute;n en la parte llamada <strong>Contadores agregados</strong>. Para quitarlos los marcaremos en dicha zona y haremos click en <strong>Quitar. </strong>Al pulsar en <strong>Aceptar </strong>veremos en funcionamiento los contadores representados en la gr&aacute;fica en tiempo real.</p>
+</li>
+</ol>
+<div style="width: 100%;">
+<div style="width: 50%; float: left;">
+<div class="elemento_centrado">
+<div>
+<div class="elemento_centrado"><a title="Ampliar imagen." href="SI06_CONT_R30_agreg_control_monitor_rto.png"><img alt="muestra c&oacute;mo agregar en el monitor de rendimiento de Windows 7 un nuevo contador para visualizarlo en la gr&aacute;fica de rendimiento. En la imagen se ha desplegado en la parte izquierda los contadores del Sistema, entre otros aparecen porcentaje de cuota de Registro en uso, Bytes de control de archivo/s, Bytes de escritura de archivo/s, Bytes en cach&eacute;, etc. " class="imagen_ampliable" src="SI06_CONT_R30_agreg_control_monitor_rto_miniatura.PNG" title="monitor de rendimiento de Windows 7" height="148" width="200" /></a></div>
+</div>
+</div>
+</div>
+<div style="width: 50%; float: right;">
+<div class="elemento_centrado">
+<div>
+<div class="elemento_centrado"><a title="Ampliar imagen." href="SI06_CONT_R31_control_monitor_rto.png"><img alt="muestra la gr&aacute;fica de rendimiento del monitor de rendimiento de Windows 7 con nuevos contadores incluidos (bytes en cach&eacute;, espacio en cach&eacute;, etc). Cada contador tiene un color diferente para facilitar su identificaci&oacute;n." class="imagen_ampliable" src="SI06_CONT_R31_control_monitor_rto_miniatura.PNG" title="monitor de rendimiento de Windows 7" height="140" width="200" /></a></div>
+</div>
+</div>
+</div>
+</div>
+<div style="clear: both;">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="41_configuracin_de_las_actualizaciones_automticas.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="43_desfragmentacin_y_chequeo_de_discos.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+</div>
+</body></html>

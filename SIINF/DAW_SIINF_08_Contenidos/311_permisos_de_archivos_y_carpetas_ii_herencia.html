@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.1.1.- Permisos de archivos y carpetas (II). Herencia </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="generator" content="eXeLearning 2.0.4ppa04 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú"}</script>
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Administración básica de Windows</a></li>
+   <li><a href="1_herramientas_administrativas_y_del_sistema.html" class="daddy">1.- Herramientas administrativas y del sistema.</a>
+   <ul class="other-section">
+      <li><a href="11_herramientas_administrativas.html" class="no-ch">1.1.- Herramientas administrativas.</a></li>
+      <li><a href="12_herramientas_del_sistema.html" class="no-ch">1.2.- Herramientas del sistema.</a></li>
+   </ul>
+   </li>
+   <li><a href="2_administracin_de_grupos_y_cuentas_de_usuario_locales.html" class="daddy">2.- Administración de grupos y cuentas de usuario locales.</a>
+   <ul class="other-section">
+      <li><a href="21_tipos_de_cuentas_de_usuario_y_grupos_locales.html" class="no-ch">2.1.- Tipos de cuentas de usuario y grupos locales</a></li>
+      <li><a href="22_gestin_de_cuentas_de_usuario_y_grupos_locales_i.html" class="daddy">2.2.- Gestión de cuentas de usuario y grupos locales (I).</a>
+      <ul class="other-section">
+         <li><a href="221_gestin_de_cuentas_de_usuario_y_grupos_locales_ii.html" class="no-ch">2.2.1.- Gestión de cuentas de usuario y grupos locales (II).</a></li>
+      </ul>
+      </li>
+      <li><a href="23_uac_control_de_cuentas_de_usuario.html" class="no-ch">2.3.- UAC: Control de Cuentas de Usuario.</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="3_administracin_de_seguridad_de_recursos_a_nivel_local.html" class="current-page-parent daddy">3.- Administración de seguridad de recursos a nivel local.</a>
+   <ul>
+      <li class="current-page-parent"><a href="31_permisos_de_archivos_y_carpetas_i.html" class="current-page-parent daddy">3.1.- Permisos de archivos y carpetas (I).</a>
+      <ul>
+         <li id="active"><a href="311_permisos_de_archivos_y_carpetas_ii_herencia.html" class="active no-ch">3.1.1.- Permisos de archivos y carpetas (II). Herencia</a></li>
+      </ul>
+      </li>
+      <li><a href="32_directivas_de_seguridad_local_y_directivas_de_grupo_local.html" class="daddy">3.2.- Directivas de seguridad local y Directivas de grupo local.</a>
+      <ul class="other-section">
+         <li><a href="321_directivas_de_seguridad_local.html" class="no-ch">3.2.1.- Directivas de seguridad local.</a></li>
+         <li><a href="322_creacin_de_contraseas.html" class="daddy">3.2.2.- Creación de contraseñas</a>
+         <ul class="other-section">
+            <li><a href="3221_contraseas_robustas.html" class="no-ch">3.2.2.1.- Contraseñas robustas</a></li>
+         </ul>
+         </li>
+         <li><a href="323_directivas_de_grupo_local.html" class="no-ch">3.2.3.- Directivas de grupo local.</a></li>
+      </ul>
+      </li>
+      <li><a href="33_cuotas_de_disco.html" class="no-ch">3.3.- Cuotas de disco</a></li>
+   </ul>
+   </li>
+   <li><a href="4_mantenimiento_del_sistema.html" class="daddy">4.- Mantenimiento del sistema.</a>
+   <ul class="other-section">
+      <li><a href="41_configuracin_de_las_actualizaciones_automticas.html" class="no-ch">4.1.- Configuración de las actualizaciones automáticas.</a></li>
+      <li><a href="42_monitorizacin_del_sistema_monitor_de_rendimiento.html" class="no-ch">4.2.- Monitorización del sistema: Monitor de rendimiento.</a></li>
+      <li><a href="43_desfragmentacin_y_chequeo_de_discos.html" class="no-ch">4.3.- Desfragmentación y chequeo de discos.</a></li>
+      <li><a href="44_programacin_de_tareas_de_mantenimiento.html" class="no-ch">4.4.- Programación de tareas de mantenimiento.</a></li>
+      <li><a href="45_restaurar_el_sistema.html" class="no-ch">4.5.- Restaurar el sistema.</a></li>
+      <li><a href="46_copias_de_seguridad.html" class="no-ch">4.6.- Copias de seguridad.</a></li>
+   </ul>
+   </li>
+   <li><a href="5_uso_de_antivirus_antiespas_y_otros_programas_de_proteccin.html" class="daddy">5.- Uso de antivirus, antiespías y otros programas de protección.</a>
+   <ul class="other-section">
+      <li><a href="51_antivirus.html" class="no-ch">5.1.- Antivirus.</a></li>
+      <li><a href="52_windows_defender.html" class="no-ch">5.2.- Windows Defender.</a></li>
+      <li><a href="53_prevencin_de_ejecucin_de_datos_dep.html" class="no-ch">5.3.- Prevención de ejecución de datos (DEP).</a></li>
+      <li><a href="54_sistema_de_cifrado_de_archivos.html" class="daddy">5.4.- Sistema de cifrado de archivos.</a>
+      <ul class="other-section">
+         <li><a href="541_procesos_de_cifrado_exportacin_e_importacin_de_certificados_efs.html" class="no-ch">5.4.1.- Procesos de cifrado, exportación e importación de certificados EFS.</a></li>
+         <li><a href="542_bitlocker.html" class="no-ch">5.4.2.- Bitlocker.</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="6_gestin_de_procesos_en_windows.html" class="daddy">6. Gestión de procesos en Windows.</a>
+   <ul class="other-section">
+      <li><a href="61_gestin_de_procesos_por_lnea_de_comandos.html" class="no-ch">6.1.- Gestión de procesos por línea de comandos.</a></li>
+   </ul>
+   </li>
+   <li><a href="7_gestin_de_servicios_en_windows.html" class="daddy">7. Gestión de servicios en Windows</a>
+   <ul class="other-section">
+      <li><a href="71_gestin_de_servicios_en_modo_comando.html" class="no-ch">7.1.- Gestión de servicios en modo comando.</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="31_permisos_de_archivos_y_carpetas_i.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="32_directivas_de_seguridad_local_y_directivas_de_grupo_local.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.1.1.- Permisos de archivos y carpetas (II). Herencia</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id38">
+<div class="iDevice emphasis0">
+<div id="ta38_1" class="block iDevice_content">
+<div class="FreeTextfpdIdevice">
+<div class="iDevice emphasis0">
+<div class="block">
+<p class="heading"><span style="font-size: medium;"><strong>Permisos expl&iacute;citos y heredados</strong></span></p>
+<p>Hay dos formas de asignar los permisos a archivos y carpetas:</p>
+<ul>
+<li class="unordered"><strong>Los permisos expl&iacute;citos</strong> son aquellos que se establecen principalmente cuando los define el usuario o cuando se establecen de forma predeterminada en objetos que no son secundarios cuando se crea el objeto.</li>
+<li class="unordered"><strong>Los permisos heredados</strong> son los que se propagan a una carpeta o fichero desde otra carpeta superior. Los permisos heredados facilitan la tarea de administrar permisos y aseguran su coherencia entre todos los objetos de un contenedor determinado. <br /><br /></li>
+</ul>
+<p>De forma predeterminada, los objetos de un contenedor heredan los permisos desde ese contenedor cuando se crean los objetos. Por ejemplo, cuando crea la carpeta "Mi carpeta", todas las subcarpetas y archivos creados en la carpeta "Mi carpeta" heredan de forma autom&aacute;tica los permisos de la carpeta. De esta manera, la carpeta "Mi carpeta" tiene permisos expl&iacute;citos, mientras que las subcarpetas y los archivos heredan los permisos. </p>
+<div style="margin: 0.5em 0px; padding: 5px; border: thin solid #bbbbdd; overflow: hidden; background-color: #ddddff;"><span style="color: #000000;"><strong> Nota:&nbsp;</strong>Los permisos expl&iacute;citos tienen prioridad sobre los permisos heredados, incluidos los permisos Denegar heredados.</span></div>
+<p>&nbsp;</p>
+<p class="heading"><strong><span style="font-size: medium;">Herencia de todos los objetos</span></strong></p>
+<p>Si las casillas de permisos <strong>Permitir</strong> y <strong>Denegar</strong> de las distintas partes de la interfaz de usuario de control de acceso est&aacute;n sombreadas cuando ve los permisos de un objeto, el objeto tendr&aacute; permisos heredados de un objeto primario. Puede configurar estos permisos heredados mediante la ficha <strong>Permisos</strong> de la p&aacute;gina de propiedades <strong>Configuraci&oacute;n de seguridad avanzada</strong>.</p>
+<p>Hay tres modos recomendados de realizar cambios en los permisos heredados:</p>
+<ul>
+<li class="unordered">Realice los cambios en el objeto primario donde los permisos se definen de forma expl&iacute;cita, y el objeto secundario heredar&aacute; estos permisos. Para obtener m&aacute;s informaci&oacute;n, vea <a href="http://technet.microsoft.com/es-es/library/cc731667.aspx">Definir, ver, cambiar o quitar permisos de un objeto</a>.<br /><br /></li>
+<li class="unordered">Seleccione el permiso <strong>Permitir</strong> para invalidar el permiso <strong>Denegar</strong> heredado.<br /><br /></li>
+<li class="unordered">Desactive la casilla <strong>Incluir todos los permisos heredables del objeto primario de este objeto</strong>. A continuaci&oacute;n, puede realizar cambios en los permisos o quitar usuarios o grupos de la lista <strong>Permisos</strong>. Sin embargo, el objeto ya no heredar&aacute; los permisos del objeto principal.<br />
+<div class="alert">&nbsp;</div>
+</li>
+</ul>
+<div style="margin: 0.5em 0px; padding: 5px; border: thin solid #bbbbdd; overflow: hidden; background-color: #ddddff;"><span style="color: #000000;"><strong> Nota:&nbsp;</strong>Los permisos Denegar heredados no impiden el acceso a un objeto si &eacute;ste cuenta con una entrada de permiso expl&iacute;cito Permitir.</span></div>
+<div style="margin: 0.5em 0px; padding: 5px; border: thin solid #bbbbdd; overflow: hidden; background-color: #ddddff;"><span style="color: #000000;"><strong> Nota:&nbsp;</strong>Los permisos expl&iacute;citos tienen prioridad sobre los permisos heredados, incluidos los permisos Denegar heredados.</span></div>
+<p>Si la entrada <strong>Permisos especiales</strong> de <strong>Permisos de &lt;usuario o grupo&gt;</strong> aparece sombreada, no implica que este permiso se haya heredado. Significa que se ha seleccionado un permiso especial.</p>
+<p>En la ficha <strong>Permisos</strong> de la p&aacute;gina <strong>Configuraci&oacute;n de seguridad avanzada para &lt;carpeta&gt;</strong>, en <strong>Entradas de permisos</strong>, en la columna <strong>Aplicar a</strong> se muestran las carpetas o subcarpetas a las que se aplica un permiso. En la columna <strong>Heredado de</strong> se muestra de d&oacute;nde se han heredado los permisos.</p>
+<p>Puede utilizar el campo <strong>Aplicar en</strong> de la p&aacute;gina <strong>Entrada de permiso para </strong><strong>&lt;Carpeta&gt;</strong> para seleccionar las carpetas o subcarpetas a las que desea que se apliquen estos permisos.</p>
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper CasopracticofpdIdevice em_iDevice" id="id39">
+<div class="iDevice emphasis_casopracticofpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Caso práctico</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta39_62" class="block iDevice_content">
+<p><a href="SI06_CONT_R14_permisos.png"><img src="SI06_CONT_R14_permisos_miniatura.PNG" class="imagen_ampliable" style="float: right; margin-left: 5px; margin-right: 5px;" height="188" width="156" /></a>Pongamos un ejemplo, creemos en la ra&iacute;z de nuestro volumen (con sistema de archivos <acronym title="NT File System." lang="en">NTFS</acronym>) una carpeta con nombre EMPRESA. Una vez creada, accedemos a sus propiedades y en ellas a la <strong>pesta&ntilde;a Seguridad</strong>:</p>
+<p>Podemos ver como en la parte superior tenemos las SID a las que concedemos permisos (usuarios y grupos) y en la parte inferior tenemos los permisos concretos que le concedemos a dicha SID. Si ves las dos columnas por cada permiso, podemos tanto <strong>Permitir</strong> como <strong>Denegar un permiso</strong>. La denegaci&oacute;n de un permiso es la que m&aacute;s pesa, y se aplica inmediatamente. De hecho, se aconseja no denegar permisos, a menos que sea absolutamente necesario.</p>
+<p>Con el bot&oacute;n <strong>Editar </strong>se nos abre una nueva pantalla donde aparecen los botones<strong> Agregar </strong>y<strong> Quitar</strong>. Con ellos podemos a&ntilde;adir o quitar usuarios o grupos de la <acronym title="Access Control List." lang="en">ACL</acronym>. En la parte inferior podemos pulsar en las casillas de <strong>Permitir y Denegar</strong> para dar y quitar <strong>permisos</strong>.</p>
+<p>&iquest;Te has fijado que la columna de Permitir est&aacute; en gris y no nos deja cambiarla? Pero, ... &iquest;por qu&eacute; raz&oacute;n ocurre esto? Bien, en este momento, nos toca hablar de la <strong>herencia</strong>.</p>
+<p><a href="SI06_CONT_R14_1_permisos_heredados.png"><img src="SI06_CONT_R14_1_permisos_heredados_miniatura.PNG" class="imagen_ampliable" style="margin-left: 5px; margin-right: 5px; float: left;" height="200" width="156" /></a>Tomamos de referencia, de nuevo, a la carpeta llamada EMPRESA, vamos a prepararla para que pueden leer y escribir en ella los usuarios que sean miembros del grupo EMPLEADOS, para que s&oacute;lo puedan leer los del grupo JEFES pero no escribir, y que los dem&aacute;s usuarios no puedan ni leer en ella ni escribir. Bien, si ahora dentro de la carpeta EMPRESA creamos una nueva carpeta INFORMES, &iquest;no ser&iacute;a l&oacute;gico que esta carpeta INFORMES "heredar&aacute;" la ACL de su carpeta superior EMPRESA para que no tuviera que configurarla nuevamente?</p>
+<p>Pues precisamente eso es lo que hace Windows 7, cualquier recurso que creemos, heredar&aacute; autom&aacute;ticamente la ACL de su recurso padre si es que existe. En nuestro caso, la carpeta EMPRESA ha heredado la ACL de la ra&iacute;z de nuestro volumen. De modo que no podremos quitar usuarios, quitar permisos, etc.</p>
+<div class="elemento_derecha">&nbsp;</div>
+<p><a href="SI06_CONT_R15_seg_avanz.png"><img src="SI06_CONT_R15_seg_avanz_miniatura.PNG" class="imagen_ampliable" style="float: right; margin-left: 5px; margin-right: 5px;" /></a>Para realizar cambios en la ACL de nuestra carpeta EMPRESA, debemos indicarle que "rompa" la herencia, es decir, que deseamos retocar manualmente su ACL.</p>
+<p>Para ello, accedemos al bot&oacute;n de Opciones Avanzadas que est&aacute; en la pesta&ntilde;a Seguridad.</p>
+<p>Podemos ver en estas opciones avanzadas 4 pesta&ntilde;as, de momento nos quedamos en la primera, permisos.</p>
+<p>Vemos como en la parte inferior de esta ventana, podemos ver como esta marcada la opci&oacute;n de:</p>
+<p class="texto_centrado">"<strong>Incluir todos los permisos heredables del objeto primario de este objeto</strong>".</p>
+<p><a href="SI06_CONT_R16_herencia.png"><img src="SI06_CONT_R16_herencia_miniatura.PNG" class="imagen_ampliable" style="float: left; margin-left: 5px; margin-right: 5px;" /></a>Esto implica: "Heredar del objeto principal las entradas de permiso relativas a los objetos secundarios e incluirlas junto con las entradas indicadas aqu&iacute; de forma expl&iacute;cita". Si desmarcamos dicha opci&oacute;n mataremos la relaci&oacute;n de herencia de nuestro recurso, y podremos gestionar su ACL "directamente". Vamos a ello.</p>
+<p>Hay que tener cuidado, una vez quitada la herencia, el sistema nos da a elegir entre dos opciones: Si escogemos la opci&oacute;n Agregar, la herencia se interrumpir&aacute;, y podremos retocar la ACL como nos plazca, pero dicha ACL ser&aacute; la que ahora mismo tiene el recurso, heredada de su objeto principal.</p>
+<p>Si escogemos la opci&oacute;n Quitar, la ACL se borrar&aacute; totalmente, se interrumpir&aacute; la herencia y la podremos crear desde cero.</p>
+<p>Si elegimos quitar y empezar desde cero, hay que tener en cuenta que en las ACL no s&oacute;lo deben aparecer nuestras SID normales, sino que grupos como Creator Owner o System son necesarios para que el sistema pueda trabajar sin problemas con dichas carpetas. Si quitamos estos SID tendremos problemas en el futuro (copias de seguridad, auditor&iacute;as, etc.).</p>
+<p>Vemos que debajo de la opci&oacute;n de <strong>Heredar del objeto principal</strong>, tenemos otra opci&oacute;n que nos permite activar que los objetos por debajo del nuestro hereden las modificaciones que hagamos en nuestra <acronym title="Access Control List" lang="en">ACL</acronym>. Esto es importante tenerlo en cuenta si queremos que los cambios que hagamos en la ACL se repliquen en los objetos hijos del nuestro, ya que hemos roto la herencia y a veces tendremos que forzar dichos cambios.</p>
+<p><a href="SI06_CONT_R16_1_ACL_empresa.png"><img src="SI06_CONT_R16_1_ACL_empresa_miniatura.PNG" class="imagen_ampliable" style="float: left; margin-left: 5px; margin-right: 5px;" height="188" width="156" /></a>Agregaremos en este momento a los grupos EMPLEADOS y JEFES y les asignaremos los permisos antes citados. Una vez eliminada herencia de permisos podremos <strong>quitar los grupos</strong> predeterminados de Windows que no nos hacen falta en nuestro ejemplo, estos son, <strong>Usuarios y Usuarios autenticados</strong>. El motivo principal para eliminarlos de la ACL de la carpeta EMPRESA es que si los dej&aacute;ramos cualquier usuario del sistema podr&iacute;a acceder y ver el contenido de la carpeta. Esto es as&iacute;, porque cuando creamos un usuario en Windows, &eacute;ste lo hace miembro autom&aacute;ticamente de estos grupos. La ACL de la carpeta EMPRESA quedar&iacute;a como vemos en la imagen. Resumiendo, los grupos de usuarios que deben tener acceso a la carpeta EMPRESA ser&aacute;n el grupo de Administradores (con Control total - todos los permisos), el grupo SYSTEM (creados estos dos grupos de forma autom&aacute;tica por Windows) y los grupos EMPLEADOS y JEFES.</p>
+<p>Los distintos <strong>permisos </strong>que se pueden aplicar para cada SID en la ACL no son &uacute;nicamente los que vemos en las propiedades de la carpeta, si entramos desde la pesta&ntilde;a de Seguridad en <strong>Opciones avanzadas </strong>veremos un cuadro llamado<strong> Entradas de permisos </strong>para los distintos usuarios y grupos de la ACL. Tras esto, hacemos click en el bot&oacute;n <strong>Cambiar permisos</strong> y despu&eacute;s en el bot&oacute;n <strong>Editar</strong>. De esta manera, veremos c&oacute;mo podemos indicar otro tipo de permisos.</p>
+<div class="elemento_derecha">&nbsp;</div>
+<p><a href="SI06_CONT_R17_detalle_permisos.png"><img src="SI06_CONT_R17_detalle_permisos_miniatura.PNG" class="imagen_ampliable" style="float: right; margin-left: 5px; margin-right: 5px;" /></a>El permiso <strong>Atravesar carpeta</strong> permite o impide que el usuario pase de una carpeta a otra para llegar a otros archivos o carpetas, incluso aunque el usuario no tenga permisos para las carpetas recorridas (s&oacute;lo se aplica a carpetas).</p>
+<p>El permiso <strong>Leer atributos</strong> permite o impide que el usuario vea los atributos de un archivo o de una carpeta, como s&oacute;lo lectura y oculto. Los atributos est&aacute;n definidos por el sistema de archivos NTFS.</p>
+<p>El permiso <strong>Escribir atributos</strong> permite o impide que el usuario cambie los atributos de un archivo o de una carpeta, como s&oacute;lo lectura y oculto. Los atributos est&aacute;n definidos por el sistema de archivos NTFS.</p>
+<p>El permiso <strong>Tomar posesi&oacute;n</strong> permite o impide que el usuario tome posesi&oacute;n del archivo o de la carpeta. El propietario de un archivo o de una carpeta puede cambiar los permisos correspondientes, cualesquiera que sean los permisos existentes que protegen el archivo o la carpeta.</p>
+<p>Un permiso muy especial es el de <strong>Control Total</strong>. Si este permiso se lo otorgamos a un usuario en una carpeta, este usuario podr&aacute; eliminar cualquier cosa que haya en esa carpeta, incluso si le denegamos el permiso de eliminaci&oacute;n en esos recursos. Hay que tener mucho cuidado al conceder este permiso.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="31_permisos_de_archivos_y_carpetas_i.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="32_directivas_de_seguridad_local_y_directivas_de_grupo_local.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+</div>
+</body></html>

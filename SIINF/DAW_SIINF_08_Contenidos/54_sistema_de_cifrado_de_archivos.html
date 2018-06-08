@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5.4.- Sistema de cifrado de archivos. </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="generator" content="eXeLearning 2.0.4ppa04 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú"}</script>
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Administración básica de Windows</a></li>
+   <li><a href="1_herramientas_administrativas_y_del_sistema.html" class="daddy">1.- Herramientas administrativas y del sistema.</a>
+   <ul class="other-section">
+      <li><a href="11_herramientas_administrativas.html" class="no-ch">1.1.- Herramientas administrativas.</a></li>
+      <li><a href="12_herramientas_del_sistema.html" class="no-ch">1.2.- Herramientas del sistema.</a></li>
+   </ul>
+   </li>
+   <li><a href="2_administracin_de_grupos_y_cuentas_de_usuario_locales.html" class="daddy">2.- Administración de grupos y cuentas de usuario locales.</a>
+   <ul class="other-section">
+      <li><a href="21_tipos_de_cuentas_de_usuario_y_grupos_locales.html" class="no-ch">2.1.- Tipos de cuentas de usuario y grupos locales</a></li>
+      <li><a href="22_gestin_de_cuentas_de_usuario_y_grupos_locales_i.html" class="daddy">2.2.- Gestión de cuentas de usuario y grupos locales (I).</a>
+      <ul class="other-section">
+         <li><a href="221_gestin_de_cuentas_de_usuario_y_grupos_locales_ii.html" class="no-ch">2.2.1.- Gestión de cuentas de usuario y grupos locales (II).</a></li>
+      </ul>
+      </li>
+      <li><a href="23_uac_control_de_cuentas_de_usuario.html" class="no-ch">2.3.- UAC: Control de Cuentas de Usuario.</a></li>
+   </ul>
+   </li>
+   <li><a href="3_administracin_de_seguridad_de_recursos_a_nivel_local.html" class="daddy">3.- Administración de seguridad de recursos a nivel local.</a>
+   <ul class="other-section">
+      <li><a href="31_permisos_de_archivos_y_carpetas_i.html" class="daddy">3.1.- Permisos de archivos y carpetas (I).</a>
+      <ul class="other-section">
+         <li><a href="311_permisos_de_archivos_y_carpetas_ii_herencia.html" class="no-ch">3.1.1.- Permisos de archivos y carpetas (II). Herencia</a></li>
+      </ul>
+      </li>
+      <li><a href="32_directivas_de_seguridad_local_y_directivas_de_grupo_local.html" class="daddy">3.2.- Directivas de seguridad local y Directivas de grupo local.</a>
+      <ul class="other-section">
+         <li><a href="321_directivas_de_seguridad_local.html" class="no-ch">3.2.1.- Directivas de seguridad local.</a></li>
+         <li><a href="322_creacin_de_contraseas.html" class="daddy">3.2.2.- Creación de contraseñas</a>
+         <ul class="other-section">
+            <li><a href="3221_contraseas_robustas.html" class="no-ch">3.2.2.1.- Contraseñas robustas</a></li>
+         </ul>
+         </li>
+         <li><a href="323_directivas_de_grupo_local.html" class="no-ch">3.2.3.- Directivas de grupo local.</a></li>
+      </ul>
+      </li>
+      <li><a href="33_cuotas_de_disco.html" class="no-ch">3.3.- Cuotas de disco</a></li>
+   </ul>
+   </li>
+   <li><a href="4_mantenimiento_del_sistema.html" class="daddy">4.- Mantenimiento del sistema.</a>
+   <ul class="other-section">
+      <li><a href="41_configuracin_de_las_actualizaciones_automticas.html" class="no-ch">4.1.- Configuración de las actualizaciones automáticas.</a></li>
+      <li><a href="42_monitorizacin_del_sistema_monitor_de_rendimiento.html" class="no-ch">4.2.- Monitorización del sistema: Monitor de rendimiento.</a></li>
+      <li><a href="43_desfragmentacin_y_chequeo_de_discos.html" class="no-ch">4.3.- Desfragmentación y chequeo de discos.</a></li>
+      <li><a href="44_programacin_de_tareas_de_mantenimiento.html" class="no-ch">4.4.- Programación de tareas de mantenimiento.</a></li>
+      <li><a href="45_restaurar_el_sistema.html" class="no-ch">4.5.- Restaurar el sistema.</a></li>
+      <li><a href="46_copias_de_seguridad.html" class="no-ch">4.6.- Copias de seguridad.</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="5_uso_de_antivirus_antiespas_y_otros_programas_de_proteccin.html" class="current-page-parent daddy">5.- Uso de antivirus, antiespías y otros programas de protección.</a>
+   <ul>
+      <li><a href="51_antivirus.html" class="no-ch">5.1.- Antivirus.</a></li>
+      <li><a href="52_windows_defender.html" class="no-ch">5.2.- Windows Defender.</a></li>
+      <li><a href="53_prevencin_de_ejecucin_de_datos_dep.html" class="no-ch">5.3.- Prevención de ejecución de datos (DEP).</a></li>
+      <li id="active"><a href="54_sistema_de_cifrado_de_archivos.html" class="active daddy">5.4.- Sistema de cifrado de archivos.</a>
+      <ul>
+         <li><a href="541_procesos_de_cifrado_exportacin_e_importacin_de_certificados_efs.html" class="no-ch">5.4.1.- Procesos de cifrado, exportación e importación de certificados EFS.</a></li>
+         <li><a href="542_bitlocker.html" class="no-ch">5.4.2.- Bitlocker.</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="6_gestin_de_procesos_en_windows.html" class="daddy">6. Gestión de procesos en Windows.</a>
+   <ul class="other-section">
+      <li><a href="61_gestin_de_procesos_por_lnea_de_comandos.html" class="no-ch">6.1.- Gestión de procesos por línea de comandos.</a></li>
+   </ul>
+   </li>
+   <li><a href="7_gestin_de_servicios_en_windows.html" class="daddy">7. Gestión de servicios en Windows</a>
+   <ul class="other-section">
+      <li><a href="71_gestin_de_servicios_en_modo_comando.html" class="no-ch">7.1.- Gestión de servicios en modo comando.</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="53_prevencin_de_ejecucin_de_datos_dep.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="541_procesos_de_cifrado_exportacin_e_importacin_de_certificados_efs.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">5.4.- Sistema de cifrado de archivos.</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id228">
+<div class="iDevice emphasis0">
+<div id="ta228_1" class="block iDevice_content">
+<div id="id45" class="FreeTextfpdIdevice">
+<div class="iDevice emphasis0">
+<div id="ta45_73" class="block" style="display: block;"><img alt="Se ven unos archivos de documentos." class="elemento_derecha" src="SI06_CONT_R47_doc.png" style="width: 160px; height: 160px;" title="Documentos-archivos." height="160" width="160" />
+<p>El sistema de cifrado de archivos (<acronym title=" Encrypting File System" lang="en">EFS</acronym>) es una caracter&iacute;stica de <span lang="en">Windows</span> que permite <strong>almacenar informaci&oacute;n en el disco duro de forma cifrada</strong>. El cifrado es la protecci&oacute;n de mayor nivel que proporciona <span lang="en">Windows</span> para mantener la informaci&oacute;n a salvo.</p>
+<p>&Eacute;stas son algunas <strong>caracter&iacute;sticas</strong> destacadas de <acronym title=" Encrypting File System" lang="en">EFS</acronym>:</p>
+<ul class="lista_verificacion">
+<li>El cifrado es sencillo. Se realiza activando una casilla en las propiedades del archivo o de la carpeta.</li>
+<li>El usuario controla qui&eacute;n puede leer los archivos.</li>
+<li>Los archivos se cifran cuando los cierra, pero cuando los abres quedan autom&aacute;ticamente listos para su uso.</li>
+<li>Si se cambia de idea con respecto al cifrado de un archivo, se puede desactivar la casilla en las propiedades del archivo.</li>
+<li>S&oacute;lo se pueden cifrar archivos y carpetas en los vol&uacute;menes del sistema de archivos <acronym title=" NT File System" lang="en">NTFS</acronym>.</li>
+<li>Los archivos y carpetas comprimidos tambi&eacute;n se pueden cifrar. Al cifrarlos se descomprimir&aacute;n.</li>
+<li>Los archivos marcados con el atributo del sistema no se pueden cifrar, tampoco los archivos de la carpeta <code>systemroot.</code></li>
+<li><acronym title=" Encrypting File System" lang="en">EFS</acronym> se instala de manera predeterminada en <span lang="en">Windows</span> 7.</li>
+</ul>
+<div class="elemento_izquierda"><a title="Windows EFS" href="SI06_CONT_R48_efs.png"><img alt="Muestra la ventana de Atributos avanzados donde podemos activar la opci&oacute;n de Cifrar contenido para proteger datos (Windows EFS)" class="imagen_ampliable" src="SI06_CONT_R48_efs_miniatura.PNG" style="width: 200px; height: 148px;" title="Windows EFS." height="148" width="200" /></a></div>
+<p>Para<strong> cifrar archivos o carpetas con <acronym title=" Encrypting File System" lang="en">EFS</acronym></strong>, abre el explorador de <span lang="en">Windows</span> y haz click con el bot&oacute;n secundario en el archivo o la carpeta que quieres cifrar. Haz click en Propiedades.</p>
+<p>En la ficha General &gt; Avanzadas y activamos la casilla<strong> Cifrar contenido para proteger datos</strong> y Aceptar. Hay disponibles opciones de cifrado adicionales.</p>
+<p>A continuaci&oacute;n, se solicita que se haga copia de seguridad de la clave de cifrado:</p>
+<p>Si cifras datos en el equipo, necesitas un m&eacute;todo para recuperar esos datos en caso de que surja alg&uacute;n problema con la clave de cifrado. Si la clave de cifrado se pierde o queda da&ntilde;ada y no tienes ning&uacute;n medio de recuperar los datos, &eacute;stos se perder&aacute;n. Tambi&eacute;n perder&aacute;s datos si almacenas la clave de cifrado en una tarjeta inteligente y &eacute;sta se da&ntilde;a o se pierde. Para asegurarse de que siempre puede tener acceso a los datos cifrados, debes hacer una copia de seguridad de la clave y del certificado de cifrado. Si hay m&aacute;s de una persona que usa tu equipo, o si usas una tarjeta inteligente para cifrar archivos, debes crear un certificado de recuperaci&oacute;n de archivos.</p>
+<p>Finalmente, se genera un certificado del que deberemos hacer copia de seguridad, preferiblemente en un medio extra&iacute;ble.</p>
+<div id="id46" class="FreeTextfpdIdevice">
+<div class="iDevice emphasis0">
+<div id="ta46_73" class="block" style="display: block;">
+<p>Si quisi&eacute;ramos <strong>hacer una copia de todos los certificados <acronym title="Encryption File System" lang="en">EFS</acronym></strong> del equipo:</p>
+<ol>
+<li>Para abrir el Administrador de certificados, haz click en el bot&oacute;n Inicio, escribe certmgr.msc en el cuadro de b&uacute;squeda y, a continuaci&oacute;n, presione <span lang="en">ENTER</span>. Si te solicita una contrase&ntilde;a de administrador o una confirmaci&oacute;n, escribe la contrase&ntilde;a o proporciona la confirmaci&oacute;n.
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Windows EFS- consola de gesti&oacute;n de certificados" href="SI06_CONT_R49_efs.png"><img alt="Muestra la consola de gesti&oacute;n de certificados (Windows EFS) aparece en el bloque de Certificados-Usuario actual y colgando de el los contenedores: Personal, Entidades de certificaci&oacute;n ra&iacute;z de confianza, Confianza empresarial, Entidades de certificaci&oacute;n intermedias, entre otros." class="imagen_ampliable" src="SI06_CONT_R49_efs_miniatura.PNG" style="width: 200px; height: 140px;" title="Windows EFS- consola de gesti&oacute;n de certificados." height="140" width="200" /></a></div>
+</div>
+</li>
+<li>En el panel izquierdo, haz doble click en Personal.</li>
+<li>Haz click en Certificados.</li>
+<li>En el panel principal, haz click en el certificado en el que se muestra Sistema de cifrado de archivos, en Prop&oacute;sitos planteados. Es posible que debas desplazarte a la derecha para verlo.
+<p>Debes hacer una copia de seguridad de todos los certificados EFS que haya.</p>
+</li>
+<li>Haz click en el men&uacute; Acci&oacute;n, apunta a Todas las tareas y, a continuaci&oacute;n, haz click en Exportar.</li>
+<li>En el Asistente para exportaci&oacute;n de certificados, haz click en Siguiente, despu&eacute;s en Exportar la clave privada y, a continuaci&oacute;n, en Siguiente.</li>
+<li>Haz click en <span lang="en">Personal Information Exchange</span> y, a continuaci&oacute;n, en Siguiente.</li>
+<li>Escribe la contrase&ntilde;a que deseas usar, conf&iacute;rmala y, a continuaci&oacute;n, haz click en Siguiente. En el proceso de exportaci&oacute;n, se crear&aacute; un archivo para almacenar el certificado.</li>
+<li>Escribe el nombre y la ubicaci&oacute;n del archivo (incluye la ruta de acceso completa), o bien haz click en Examinar, despl&aacute;zate hasta la ubicaci&oacute;n, escribe el nombre del archivo y, a continuaci&oacute;n, haz click en Guardar.</li>
+<li>Haz click en Siguiente y, despu&eacute;s, en Finalizar.</li>
+</ol>
+<p><strong>Recuperaci&oacute;n de certificados <acronym title="Encryption File System" lang="en">EFS</acronym>:</strong></p>
+<p>Si por cualquier motivo tuvieras que<strong> recuperar la clave privada</strong> realizar&iacute;as el proceso contrario, <strong>importar&iacute;as el certificado</strong> al equipo en cuesti&oacute;n.</p>
+<p>Para ver el proceso de exportaci&oacute;n e importaci&oacute;n de certificados de cifrado m&aacute;s detalladamente echa un vistazo al siguiente subapartado.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="53_prevencin_de_ejecucin_de_datos_dep.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="541_procesos_de_cifrado_exportacin_e_importacin_de_certificados_efs.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+</div>
+</body></html>

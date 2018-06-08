@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.2.3.- Directivas de grupo local. </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="generator" content="eXeLearning 2.0.4ppa04 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú"}</script>
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Administración básica de Windows</a></li>
+   <li><a href="1_herramientas_administrativas_y_del_sistema.html" class="daddy">1.- Herramientas administrativas y del sistema.</a>
+   <ul class="other-section">
+      <li><a href="11_herramientas_administrativas.html" class="no-ch">1.1.- Herramientas administrativas.</a></li>
+      <li><a href="12_herramientas_del_sistema.html" class="no-ch">1.2.- Herramientas del sistema.</a></li>
+   </ul>
+   </li>
+   <li><a href="2_administracin_de_grupos_y_cuentas_de_usuario_locales.html" class="daddy">2.- Administración de grupos y cuentas de usuario locales.</a>
+   <ul class="other-section">
+      <li><a href="21_tipos_de_cuentas_de_usuario_y_grupos_locales.html" class="no-ch">2.1.- Tipos de cuentas de usuario y grupos locales</a></li>
+      <li><a href="22_gestin_de_cuentas_de_usuario_y_grupos_locales_i.html" class="daddy">2.2.- Gestión de cuentas de usuario y grupos locales (I).</a>
+      <ul class="other-section">
+         <li><a href="221_gestin_de_cuentas_de_usuario_y_grupos_locales_ii.html" class="no-ch">2.2.1.- Gestión de cuentas de usuario y grupos locales (II).</a></li>
+      </ul>
+      </li>
+      <li><a href="23_uac_control_de_cuentas_de_usuario.html" class="no-ch">2.3.- UAC: Control de Cuentas de Usuario.</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="3_administracin_de_seguridad_de_recursos_a_nivel_local.html" class="current-page-parent daddy">3.- Administración de seguridad de recursos a nivel local.</a>
+   <ul>
+      <li><a href="31_permisos_de_archivos_y_carpetas_i.html" class="daddy">3.1.- Permisos de archivos y carpetas (I).</a>
+      <ul class="other-section">
+         <li><a href="311_permisos_de_archivos_y_carpetas_ii_herencia.html" class="no-ch">3.1.1.- Permisos de archivos y carpetas (II). Herencia</a></li>
+      </ul>
+      </li>
+      <li class="current-page-parent"><a href="32_directivas_de_seguridad_local_y_directivas_de_grupo_local.html" class="current-page-parent daddy">3.2.- Directivas de seguridad local y Directivas de grupo local.</a>
+      <ul>
+         <li><a href="321_directivas_de_seguridad_local.html" class="no-ch">3.2.1.- Directivas de seguridad local.</a></li>
+         <li><a href="322_creacin_de_contraseas.html" class="daddy">3.2.2.- Creación de contraseñas</a>
+         <ul class="other-section">
+            <li><a href="3221_contraseas_robustas.html" class="no-ch">3.2.2.1.- Contraseñas robustas</a></li>
+         </ul>
+         </li>
+         <li id="active"><a href="323_directivas_de_grupo_local.html" class="active no-ch">3.2.3.- Directivas de grupo local.</a></li>
+      </ul>
+      </li>
+      <li><a href="33_cuotas_de_disco.html" class="no-ch">3.3.- Cuotas de disco</a></li>
+   </ul>
+   </li>
+   <li><a href="4_mantenimiento_del_sistema.html" class="daddy">4.- Mantenimiento del sistema.</a>
+   <ul class="other-section">
+      <li><a href="41_configuracin_de_las_actualizaciones_automticas.html" class="no-ch">4.1.- Configuración de las actualizaciones automáticas.</a></li>
+      <li><a href="42_monitorizacin_del_sistema_monitor_de_rendimiento.html" class="no-ch">4.2.- Monitorización del sistema: Monitor de rendimiento.</a></li>
+      <li><a href="43_desfragmentacin_y_chequeo_de_discos.html" class="no-ch">4.3.- Desfragmentación y chequeo de discos.</a></li>
+      <li><a href="44_programacin_de_tareas_de_mantenimiento.html" class="no-ch">4.4.- Programación de tareas de mantenimiento.</a></li>
+      <li><a href="45_restaurar_el_sistema.html" class="no-ch">4.5.- Restaurar el sistema.</a></li>
+      <li><a href="46_copias_de_seguridad.html" class="no-ch">4.6.- Copias de seguridad.</a></li>
+   </ul>
+   </li>
+   <li><a href="5_uso_de_antivirus_antiespas_y_otros_programas_de_proteccin.html" class="daddy">5.- Uso de antivirus, antiespías y otros programas de protección.</a>
+   <ul class="other-section">
+      <li><a href="51_antivirus.html" class="no-ch">5.1.- Antivirus.</a></li>
+      <li><a href="52_windows_defender.html" class="no-ch">5.2.- Windows Defender.</a></li>
+      <li><a href="53_prevencin_de_ejecucin_de_datos_dep.html" class="no-ch">5.3.- Prevención de ejecución de datos (DEP).</a></li>
+      <li><a href="54_sistema_de_cifrado_de_archivos.html" class="daddy">5.4.- Sistema de cifrado de archivos.</a>
+      <ul class="other-section">
+         <li><a href="541_procesos_de_cifrado_exportacin_e_importacin_de_certificados_efs.html" class="no-ch">5.4.1.- Procesos de cifrado, exportación e importación de certificados EFS.</a></li>
+         <li><a href="542_bitlocker.html" class="no-ch">5.4.2.- Bitlocker.</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="6_gestin_de_procesos_en_windows.html" class="daddy">6. Gestión de procesos en Windows.</a>
+   <ul class="other-section">
+      <li><a href="61_gestin_de_procesos_por_lnea_de_comandos.html" class="no-ch">6.1.- Gestión de procesos por línea de comandos.</a></li>
+   </ul>
+   </li>
+   <li><a href="7_gestin_de_servicios_en_windows.html" class="daddy">7. Gestión de servicios en Windows</a>
+   <ul class="other-section">
+      <li><a href="71_gestin_de_servicios_en_modo_comando.html" class="no-ch">7.1.- Gestión de servicios en modo comando.</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="3221_contraseas_robustas.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="33_cuotas_de_disco.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.2.3.- Directivas de grupo local.</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id207">
+<div class="iDevice emphasis0">
+<div id="ta207_1" class="block iDevice_content">
+<p><img src="WindowsZealot_2.png" style="float: right; margin-left: 5px; margin-right: 5px;" height="128" width="128" />Las directivas de grupo forman parte de la estructura de <span lang="en">Windows</span> XP, <span lang="en">Windows</span> Vista y <span lang="en">Windows</span> 7. En estos sistemas, las pol&iacute;ticas de grupo son una herramienta muy poderosa que permite a los administradores configurar equipos de forma local o remota, instalando aplicaciones, restringiendo los derechos de los usuarios, eliminando aplicaciones, instalando y ejecutando <span lang="en">scripts</span>, y redirigiendo carpetas del sistema a red o viceversa. Pero tambi&eacute;n tienen utilidad las pol&iacute;ticas de grupo en entornos peque&ntilde;os, incluso en una sola maquina. <br /> Usando las pol&iacute;ticas de grupo en una maquina corriendo <span lang="en">Windows</span> 7, podemos:</p>
+<ul class="lista_verificacion">
+<li>Modificar pol&iacute;ticas que se encuentran en el registro del sistema. El registro del sistema es una gran base de datos en la que se configuran cientos de comportamientos de <span lang="en">Windows</span> 7. Desde las pol&iacute;ticas de grupo podemos acceder a estas caracter&iacute;sticas y modificarlas, de una forma mucho m&aacute;s simple que mediante la edici&oacute;n pura del registro.</li>
+<li>Asignar <span lang="en">scripts</span> que se ejecutaran autom&aacute;ticamente cuando el sistema se encienda, se apague, un usuario inicie sesi&oacute;n o cierre sesi&oacute;n.</li>
+<li>Especificar opciones especiales de seguridad.</li>
+</ul>
+<p>Si estamos trabajando bajo un dominio (con un servidor en la red administrando dicho dominio) las pol&iacute;ticas de grupo cobran mayor protagonismo. En un ambiente de grupo de trabajo, las pol&iacute;ticas de grupo de cada m&aacute;quina controlan los aspectos &uacute;nicamente de dicha maquina, y en algunos casos es imposible sacarles el rendimiento esperado.</p>
+<p>La consola desde donde podemos gestionar las directivas de grupo es el <code>gpedit.msc</code>. <strong>(Inicio - Ejecutar - </strong><code>gpedit.msc</code>).</p>
+<div class="elemento_derecha">
+<div class="elemento_centrado"><a title="Ampliar imagen." href="SI06_CONT_R22_gpedit.png"><img alt="Muestra la ventana de la herramienta de Editor de directivas de grupo local. En la parte izquierda aparecen dos bloques dentro de Directiva Equipo local, &eacute;stas son: Configuraci&oacute;n del equipo y Configuraci&oacute;n de usuario. " class="imagen_ampliable" src="SI06_CONT_R22_gpedit_miniatura.PNG" title="Herramienta de Directivas de grupo local" height="124" width="192" /></a></div>
+</div>
+<p>Para poder trabajar con el <code>gpedit.msc</code> necesitamos estar usando una cuenta de usuario que pertenezca al grupo Administradores. Esta consola es muy configurable, permiti&eacute;ndonos a&ntilde;adir y <br /> quitar opciones seg&uacute;n deseemos. De momento, vamos a trabajar con las opciones que aparecen por defecto.</p>
+<p>Si nuestro equipo est&aacute; unido a un dominio, podemos configurar directivas del dominio completo, que afectaran a varias maquinas. Sin embargo, nos vamos a centrar aqu&iacute; en las directivas locales, ya que no estamos trabajando en un dominio, de momento.</p>
+<p>Principalmente veremos que dentro de las <strong>directivas de grupo locales</strong> tenemos dos <strong>opciones</strong>: <strong>Configuraci&oacute;n del equipo</strong> y <strong>Configuraci&oacute;n del usuario</strong>. En el caso de estar trabajando en grupo de trabajo es pr&aacute;cticamente indistinto trabajar con una opci&oacute;n u otra.</p>
+<p>Para aprender m&aacute;s de una directiva en concreto, simplemente tendremos que seleccionarla con el rat&oacute;n, y veremos una descripci&oacute;n detallada de dicha directiva en el panel central.</p>
+<p>Algunas directivas aparecen tanto en la configuraci&oacute;n del equipo como en la configuraci&oacute;n del usuario. En caso de conflicto, la configuraci&oacute;n del equipo siempre tiene preferencia.</p>
+<p>Para modificar el estado o configuraci&oacute;n de una directiva, simplemente tenemos que realizar doble click sobre dicha directiva para que nos aparezca el cuadro de dialogo que nos permite modificar dicha directiva. En dicho cuadro de dialogo nos mostrar&aacute; una explicaci&oacute;n de la funcionalidad de dicha directiva.</p>
+<p><a title="Ampliar imagen." href="SI06_CONT_R23_conf_directiva.png"><img alt="Muestra la ventana de la herramienta de Editor de directivas de grupo local. En la parte izquierda se sit&uacute;a en la opci&oacute;n Configuraci&oacute;n de usuario &ndash; Plantillas administrativas &ndash; Sistema - Impedir el acceso al s&iacute;mbolo del sistema. " class="elemento_derecha imagen_ampliable" src="SI06_CONT_R23_conf_directiva_miniatura.png" title="Herramienta Editor de directivas de grupo local." height="140" width="200" /></a></p>
+<p>Respecto a la configuraci&oacute;n, veremos que podemos:</p>
+<ul class="lista_verificacion">
+<li><strong>No configurar la directiva</strong>, con lo que se comportar&aacute; seg&uacute;n el criterio por defecto para dicha directiva.</li>
+<li><strong>Habilitarla</strong>, con lo que la pondremos en marcha en el sistema.</li>
+<li><strong>Deshabilitarla</strong>, con lo que impediremos que se ponga en marcha dicha directiva.</li>
+</ul>
+<p>Algunas directivas especiales permiten especificar otras informaciones.</p>
+<p>Se recomienda leer cuidadosamente la explicaci&oacute;n de cada directiva para entender sus efectos sobre el sistema y decidir habilitarla o no.</p>
+<p>Probad a deshabilitar la directiva que hemos tomado como ejemplo (<code>gpedit.msc</code> - Configuraci&oacute;n de Usuario - Plantillas Administrativas - Sistema - Impedir el acceso al s&iacute;mbolo del sistema) e intentad ejecutar una ventana de s&iacute;mbolo de comandos (<code>cmd.exe</code>)</p>
+<p>Vemos como desde las directivas de grupo podemos modificar el comportamiento de <span lang="en">Windows</span>, d&aacute;ndonos una gran potencia en la administraci&oacute;n del equipo.</p>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="3221_contraseas_robustas.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="33_cuotas_de_disco.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.1.- Permisos de archivos y carpetas (I). </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="generator" content="eXeLearning 2.0.4ppa04 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú"}</script>
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Administración básica de Windows</a></li>
+   <li><a href="1_herramientas_administrativas_y_del_sistema.html" class="daddy">1.- Herramientas administrativas y del sistema.</a>
+   <ul class="other-section">
+      <li><a href="11_herramientas_administrativas.html" class="no-ch">1.1.- Herramientas administrativas.</a></li>
+      <li><a href="12_herramientas_del_sistema.html" class="no-ch">1.2.- Herramientas del sistema.</a></li>
+   </ul>
+   </li>
+   <li><a href="2_administracin_de_grupos_y_cuentas_de_usuario_locales.html" class="daddy">2.- Administración de grupos y cuentas de usuario locales.</a>
+   <ul class="other-section">
+      <li><a href="21_tipos_de_cuentas_de_usuario_y_grupos_locales.html" class="no-ch">2.1.- Tipos de cuentas de usuario y grupos locales</a></li>
+      <li><a href="22_gestin_de_cuentas_de_usuario_y_grupos_locales_i.html" class="daddy">2.2.- Gestión de cuentas de usuario y grupos locales (I).</a>
+      <ul class="other-section">
+         <li><a href="221_gestin_de_cuentas_de_usuario_y_grupos_locales_ii.html" class="no-ch">2.2.1.- Gestión de cuentas de usuario y grupos locales (II).</a></li>
+      </ul>
+      </li>
+      <li><a href="23_uac_control_de_cuentas_de_usuario.html" class="no-ch">2.3.- UAC: Control de Cuentas de Usuario.</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="3_administracin_de_seguridad_de_recursos_a_nivel_local.html" class="current-page-parent daddy">3.- Administración de seguridad de recursos a nivel local.</a>
+   <ul>
+      <li id="active"><a href="31_permisos_de_archivos_y_carpetas_i.html" class="active daddy">3.1.- Permisos de archivos y carpetas (I).</a>
+      <ul>
+         <li><a href="311_permisos_de_archivos_y_carpetas_ii_herencia.html" class="no-ch">3.1.1.- Permisos de archivos y carpetas (II). Herencia</a></li>
+      </ul>
+      </li>
+      <li><a href="32_directivas_de_seguridad_local_y_directivas_de_grupo_local.html" class="daddy">3.2.- Directivas de seguridad local y Directivas de grupo local.</a>
+      <ul class="other-section">
+         <li><a href="321_directivas_de_seguridad_local.html" class="no-ch">3.2.1.- Directivas de seguridad local.</a></li>
+         <li><a href="322_creacin_de_contraseas.html" class="daddy">3.2.2.- Creación de contraseñas</a>
+         <ul class="other-section">
+            <li><a href="3221_contraseas_robustas.html" class="no-ch">3.2.2.1.- Contraseñas robustas</a></li>
+         </ul>
+         </li>
+         <li><a href="323_directivas_de_grupo_local.html" class="no-ch">3.2.3.- Directivas de grupo local.</a></li>
+      </ul>
+      </li>
+      <li><a href="33_cuotas_de_disco.html" class="no-ch">3.3.- Cuotas de disco</a></li>
+   </ul>
+   </li>
+   <li><a href="4_mantenimiento_del_sistema.html" class="daddy">4.- Mantenimiento del sistema.</a>
+   <ul class="other-section">
+      <li><a href="41_configuracin_de_las_actualizaciones_automticas.html" class="no-ch">4.1.- Configuración de las actualizaciones automáticas.</a></li>
+      <li><a href="42_monitorizacin_del_sistema_monitor_de_rendimiento.html" class="no-ch">4.2.- Monitorización del sistema: Monitor de rendimiento.</a></li>
+      <li><a href="43_desfragmentacin_y_chequeo_de_discos.html" class="no-ch">4.3.- Desfragmentación y chequeo de discos.</a></li>
+      <li><a href="44_programacin_de_tareas_de_mantenimiento.html" class="no-ch">4.4.- Programación de tareas de mantenimiento.</a></li>
+      <li><a href="45_restaurar_el_sistema.html" class="no-ch">4.5.- Restaurar el sistema.</a></li>
+      <li><a href="46_copias_de_seguridad.html" class="no-ch">4.6.- Copias de seguridad.</a></li>
+   </ul>
+   </li>
+   <li><a href="5_uso_de_antivirus_antiespas_y_otros_programas_de_proteccin.html" class="daddy">5.- Uso de antivirus, antiespías y otros programas de protección.</a>
+   <ul class="other-section">
+      <li><a href="51_antivirus.html" class="no-ch">5.1.- Antivirus.</a></li>
+      <li><a href="52_windows_defender.html" class="no-ch">5.2.- Windows Defender.</a></li>
+      <li><a href="53_prevencin_de_ejecucin_de_datos_dep.html" class="no-ch">5.3.- Prevención de ejecución de datos (DEP).</a></li>
+      <li><a href="54_sistema_de_cifrado_de_archivos.html" class="daddy">5.4.- Sistema de cifrado de archivos.</a>
+      <ul class="other-section">
+         <li><a href="541_procesos_de_cifrado_exportacin_e_importacin_de_certificados_efs.html" class="no-ch">5.4.1.- Procesos de cifrado, exportación e importación de certificados EFS.</a></li>
+         <li><a href="542_bitlocker.html" class="no-ch">5.4.2.- Bitlocker.</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="6_gestin_de_procesos_en_windows.html" class="daddy">6. Gestión de procesos en Windows.</a>
+   <ul class="other-section">
+      <li><a href="61_gestin_de_procesos_por_lnea_de_comandos.html" class="no-ch">6.1.- Gestión de procesos por línea de comandos.</a></li>
+   </ul>
+   </li>
+   <li><a href="7_gestin_de_servicios_en_windows.html" class="daddy">7. Gestión de servicios en Windows</a>
+   <ul class="other-section">
+      <li><a href="71_gestin_de_servicios_en_modo_comando.html" class="no-ch">7.1.- Gestión de servicios en modo comando.</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="3_administracin_de_seguridad_de_recursos_a_nivel_local.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="311_permisos_de_archivos_y_carpetas_ii_herencia.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.1.- Permisos de archivos y carpetas (I).</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id40">
+<div class="iDevice emphasis0">
+<div id="ta40_1" class="block iDevice_content">
+<p><a href="SI06_CONT_R14_permisos.png"><img src="SI06_CONT_R14_permisos_miniatura.PNG" class="imagen_ampliable" style="float: right; margin-left: 5px; margin-right: 5px;" height="188" width="156" /></a>Cuando un usuario intenta acceder a un recurso, pide autorizaci&oacute;n al recurso para hacerlo. El recurso comprobar&aacute; entonces si en su <acronym title="Access Control List." lang="en">ACL</acronym> aparece el SID del usuario, y en caso contrario, comprobar&aacute; si en su ACL aparece el SID de alg&uacute;n grupo al que pertenezca el usuario.</p>
+<p>Si no aparece en la ACL ning&uacute;n SID del usuario, el recurso niega el acceso al usuario.</p>
+<p>Si aparece en la ACL alg&uacute;n SID del usuario, el recurso comprueba si la acci&oacute;n que quiere realizar el usuario (leer, borrar, escribir, etc.) est&aacute; permitida para ese SID en su ACL, si lo est&aacute;, le autoriza para hacerlo, en caso contrario se lo impide.</p>
+<p>Puede ocurrir que un usuario tenga permisos contradictorios. Imag&iacute;nate que en el ACL de una carpeta llamada EMPRESA aparece que el SID del usuario LUIS puede escribir en la carpeta, pero LUIS pertenece al grupo CONTABILIDAD que aparece en el ACL de empresa como que no tiene derecho a escribir. Bien, en este caso se aplica la siguiente regla:</p>
+<ol>
+<li>Lo que m&aacute;s pesa en cualquier ACL es la <strong>denegaci&oacute;n</strong> impl&iacute;cita de permisos. Si un permiso esta denegado, no se sigue mirando, se deniega inmediatamente.</li>
+<li>Es suficiente con que un permiso est&eacute; concedido en cualquier SID para que se considere concedido. (A excepci&oacute;n de la regla 1, es decir, que no est&eacute; denegado impl&iacute;citamente en ning&uacute;n sitio).</li>
+</ol>
+<p class="heading">&nbsp;</p>
+<div style="margin: 0.5em 0px; padding: 5px; border: thin solid #bbbbdd; overflow: hidden; background-color: #ddddff;"><span style="color: #000000;"><strong> Importante: </strong>Para poder aplicar permisos de acceso sobre archivos y carpetas, estas deben estar en una partici&oacute;n o volumen del tipo <strong>NTFS</strong>.</span></div>
+<p>&nbsp;</p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id41">
+<div class="iDevice emphasis0">
+<div id="ta41_1" class="block iDevice_content">
+<p><strong>&iquest;Qu&eacute; son los permisos?</strong></p>
+<p class="para">Los permisos son reglas asociadas a los objetos de un equipo o red, como archivos y carpetas. Los permisos determinan si se puede obtener acceso a un objeto y lo que se puede hacer con &eacute;l. Por ejemplo, puede tener acceso a un documento en una carpeta compartida de una red. Y aunque pueda leer el documento, es posible que no tenga permisos para modificarlo. Los administradores del sistema y los usuarios con cuentas de administrador en los equipos pueden asignar permisos a usuarios individuales o a grupos.</p>
+<p class="para">En la siguiente tabla se muestran los niveles de permisos normalmente disponibles para archivos y carpetas.</p>
+<table class="tabla" summary="Tabla donde se enumeran los niveles de permisos de archivos y carpetas">
+<thead>
+<tr><th class="matS"><span class="para">Nivel de permiso</span></th><th class="matS"><span class="para">Descripci&oacute;n</span></th></tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<div class="table-cell-content">
+<p class="para">Control total</p>
+</div>
+</td>
+<td>
+<div class="table-cell-content">
+<p class="para">Los usuarios pueden ver el contenido de un archivo o una carpeta, cambiar los archivos y las carpetas existentes, crear nuevos archivos y carpetas y ejecutar programas de una carpeta.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="table-cell-content">
+<p class="para">Modificar</p>
+</div>
+</td>
+<td>
+<div class="table-cell-content">
+<p class="para">Los usuarios pueden cambiar los archivos y las carpetas existentes, pero no pueden crear archivos ni carpetas nuevos.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="table-cell-content">
+<p class="para">Leer y ejecutar</p>
+</div>
+</td>
+<td>
+<div class="table-cell-content">
+<p class="para">Los usuarios pueden ver el contenido de los archivos y las carpetas existentes y pueden ejecutar programas de una carpeta.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="table-cell-content">
+<p class="para">Leer</p>
+</div>
+</td>
+<td>
+<div class="table-cell-content">
+<p class="para">Los usuarios pueden ver el contenido de una carpeta y abrir archivos y carpetas.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="table-cell-content">
+<p class="para">Escribir</p>
+</div>
+</td>
+<td>
+<div class="table-cell-content">
+<p class="para lastElement">Los usuarios pueden crear nuevos archivos y carpetas, y realizar cambios en los archivos y carpetas existentes.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="para">&nbsp;</p>
+<p>Para comprobar los permisos de un archivo o una carpeta:</p>
+<ol>
+<li>Haga clic con el bot&oacute;n secundario en el archivo o carpeta y, a continuaci&oacute;n, haga clic en Propiedades.</li>
+<li>Haga clic en la ficha Seguridad.</li>
+<li>Haga clic en un nombre de usuario o de grupo en Nombres de grupos o usuarios.</li>
+</ol>
+<p>Los permisos del usuario o grupo seleccionado se mostrar&aacute;n en la parte inferior del cuadro de di&aacute;logo Propiedades</p>
+<p class="para">Estos permisos agrupan una serie de permisos especiales seg&uacute;n se ve en la siguiente tabla:</p>
+<table class="tabla">
+<tbody>
+<tr><th colspan="1">Permisos especiales</th><th colspan="1">Control total</th><th colspan="1">Modificar</th><th colspan="1">Leer y ejecutar</th><th colspan="1">Mostrar el contenido de la carpeta (s&oacute;lo en carpetas)</th><th colspan="1">Lectura</th><th colspan="1">Escritura</th></tr>
+<tr>
+<td colspan="1">
+<p>Recorrer carpeta / Ejecutar archivo</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>Listar carpeta / Leer datos</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>Atributos de lectura</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>Atributos extendidos de lectura</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>Crear archivos / Escribir datos</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>Crear carpetas / Anexar datos</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>Atributos de escritura</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>Atributos extendidos de escritura</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>Eliminar subcarpetas y archivos</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>Eliminar</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>Permisos de lectura</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>Cambiar permisos</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>Tomar posesi&oacute;n</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+<td style="text-align: center;" colspan="1">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="1">
+<p>Sincronizar</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+<td style="text-align: center;" colspan="1">
+<p>x</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="alert">
+<table>
+<tbody>
+<tr><th align="left">Importante</th></tr>
+<tr>
+<td>Los grupos o usuarios a los que se otorg&oacute; el permiso Control total en una carpeta pueden eliminar cualquier archivo de esa carpeta independientemente de los permisos que protejan a ese archivo.</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</div>
+<p><strong>Consideraciones adicionales</strong></p>
+<ul>
+<li class="unordered">Aunque los permisos Mostrar el contenido de la carpeta y Leer y ejecutar parecen tener los mismos permisos especiales, se heredan de forma diferente. El permiso Mostrar contenido de carpeta lo heredan las carpetas y no lo heredan los archivos, y deber&iacute;a aparecer s&oacute;lo cuando se ven los permisos de carpeta. El permiso Leer y ejecutar lo heredan los archivos y las carpetas, y siempre est&aacute; presente cuando se ven los permisos de archivo o carpeta.<br /><br /></li>
+<li class="unordered">En esta versi&oacute;n de Windows, el grupo Todos no incluye el grupo Inicio de sesi&oacute;n an&oacute;nimo de forma predeterminada, por lo que los permisos que se aplican al grupo Todos no afectan al grupo Inicio de sesi&oacute;n an&oacute;nimo.</li>
+</ul>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id42">
+<div class="iDevice emphasis0">
+<div id="ta42_1" class="block iDevice_content">
+<p>La descripci&oacute;n de los permisos especiales vistos en la tabla anterior es la siguiente:</p>
+<table class="tabla">
+<tbody>
+<tr><th>Permiso</th><th>Descripci&oacute;n</th></tr>
+<tr>
+<td>
+<p><strong>Recorrer carpeta o ejecutar archivo</strong></p>
+</td>
+<td>
+<p><strong>Para las carpetas</strong>: el permiso Recorrer carpeta permite o deniega el movimiento por las carpetas para llegar a otros archivos o carpetas, incluso si el usuario no tiene permisos para las carpetas recorridas. (S&oacute;lo afecta a las carpetas.) Este permiso surte efecto s&oacute;lo si el grupo o usuario no tiene otorgado el derecho de usuario <strong>Omitir la comprobaci&oacute;n de recorrido</strong> en el complemento Directiva de grupo. (De forma predeterminada, el grupo Todos tiene el derecho de usuario <strong>Omitir la comprobaci&oacute;n de recorrido</strong>).</p>
+<p><strong>Para archivos:</strong> el permiso Ejecutar archivo permite o deniega la ejecuci&oacute;n de archivos de programa. (S&oacute;lo afecta a los archivos).</p>
+<p>Al configurar el permiso Recorrer carpeta en una carpeta no se define de manera autom&aacute;tica el permiso Ejecutar archivo en todos los archivos de esa carpeta.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Mostrar lista de carpetas o leer datos</strong></p>
+</td>
+<td>
+<p>El permiso Mostrar lista de carpetas permite o deniega ver nombres de archivos y subcarpetas de la carpeta. Este permiso s&oacute;lo afecta al contenido de esa carpeta, con independencia de si la carpeta en la que se configura el permiso aparecer&aacute; en la lista. (S&oacute;lo afecta a las carpetas.)</p>
+<p>El permiso Leer datos permite o deniega la vista de datos en archivos. (S&oacute;lo afecta a los archivos).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Leer atributos</strong></p>
+</td>
+<td>
+<p>Permite o deniega la vista de los atributos de un archivo o carpeta, como s&oacute;lo lectura y oculto. Los atributos se definen mediante NTFS.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Leer atributos extendidos</strong></p>
+</td>
+<td>
+<p>Permite o deniega la vista de atributos extendidos de un archivo o carpeta. Los atributos extendidos se definen mediante programas y pueden variar seg&uacute;n el programa.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Crear archivos o escribir datos</strong></p>
+</td>
+<td>
+<p>El permiso Crear archivos permite o deniega la creaci&oacute;n de archivos dentro de la carpeta. (S&oacute;lo afecta a carpetas).</p>
+<p>El permiso Escribir datos permite o deniega la realizaci&oacute;n de cambios en el archivo y la sobrescritura del contenido existente. (S&oacute;lo afecta a los archivos).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Crear carpetas o agregar datos</strong></p>
+</td>
+<td>
+<p>El permiso Crear carpetas permite o deniega la creaci&oacute;n de carpetas dentro de la carpeta. (S&oacute;lo afecta a carpetas).</p>
+<p>El permiso Agregar datos permite o deniega la realizaci&oacute;n de cambios al final del archivo pero no el cambio, eliminaci&oacute;n ni sobrescritura de los datos existentes. (S&oacute;lo afecta a los archivos).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Escribir atributos</strong></p>
+</td>
+<td>
+<p>Permite o deniega el cambio de los atributos de un archivo o de una carpeta, como s&oacute;lo lectura y oculto. Los atributos se definen mediante NTFS.</p>
+<p>El permiso Escribir atributos no implica la creaci&oacute;n o eliminaci&oacute;n de archivos o carpetas, s&oacute;lo incluye el permiso para realizar cambios en los atributos de un archivo o carpeta. Para permitir (o denegar) operaciones de creaci&oacute;n o eliminaci&oacute;n, vea <strong>Crear archivos o escribir datos</strong>, <strong>Crear carpetas o agregar datos</strong>, <strong>Eliminar subcarpetas y archivos</strong> y <strong>Eliminar</strong>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Escribir atributos extendidos</strong></p>
+</td>
+<td>
+<p>Permite o deniega el cambio de los atributos extendidos de un archivo o carpeta. Los atributos extendidos se definen mediante programas y pueden variar seg&uacute;n el programa.</p>
+<p>El permiso Escribir atributos extendidos no implica la creaci&oacute;n o eliminaci&oacute;n de archivos o carpetas, s&oacute;lo incluye el permiso para realizar cambios en los atributos de un archivo o carpeta. Para permitir (o denegar) operaciones de creaci&oacute;n o eliminaci&oacute;n, vea <strong>Crear archivos o escribir datos</strong>, <strong>Crear carpetas o agregar datos</strong>, <strong>Eliminar subcarpetas y archivos</strong> y <strong>Eliminar</strong>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Eliminar subcarpetas y archivos</strong></p>
+</td>
+<td>
+<p>Permite o deniega la eliminaci&oacute;n de subcarpetas y archivos, incluso si no se ha otorgado el permiso Eliminar en la subcarpeta o archivo. (Afecta a carpetas).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Eliminar</strong></p>
+</td>
+<td>
+<p>Permite o deniega la supresi&oacute;n del archivo o de la carpeta. Si no ha obtenido el permiso Eliminar en un archivo o carpeta, podr&aacute; eliminarlo si se le ha otorgado el permiso Eliminar subcarpetas y archivos en la carpeta principal.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Permisos de lectura</strong></p>
+</td>
+<td>
+<p>Permite o deniega la lectura de los permisos del archivo o carpeta, como Control total, Leer y Escribir.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Cambiar permisos</strong></p>
+</td>
+<td>
+<p>Permite o deniega el cambio de los permisos del archivo o carpeta, como Control total, Leer y Escribir.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Tomar posesi&oacute;n</strong></p>
+</td>
+<td>
+<p>Permite o deniega la toma de posesi&oacute;n del archivo o de la carpeta. El propietario de un archivo o de una carpeta siempre puede cambiar los permisos que protegen al archivo o a la carpeta.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Sincronizar</strong></p>
+</td>
+<td>
+<p>Permite o deniega a diferentes subprocesos que esperen al identificador de archivo o carpeta y que se sincronicen con otro subproceso que pueda enviarle se&ntilde;ales. Este permiso s&oacute;lo se aplica a programas multiproceso y de varios subprocesos.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="3_administracin_de_seguridad_de_recursos_a_nivel_local.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="311_permisos_de_archivos_y_carpetas_ii_herencia.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+</div>
+</body></html>

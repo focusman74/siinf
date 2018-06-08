@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5.4.1.- Procesos de cifrado, exportación e importación de certificados EFS. </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="generator" content="eXeLearning 2.0.4ppa04 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú"}</script>
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Administración básica de Windows</a></li>
+   <li><a href="1_herramientas_administrativas_y_del_sistema.html" class="daddy">1.- Herramientas administrativas y del sistema.</a>
+   <ul class="other-section">
+      <li><a href="11_herramientas_administrativas.html" class="no-ch">1.1.- Herramientas administrativas.</a></li>
+      <li><a href="12_herramientas_del_sistema.html" class="no-ch">1.2.- Herramientas del sistema.</a></li>
+   </ul>
+   </li>
+   <li><a href="2_administracin_de_grupos_y_cuentas_de_usuario_locales.html" class="daddy">2.- Administración de grupos y cuentas de usuario locales.</a>
+   <ul class="other-section">
+      <li><a href="21_tipos_de_cuentas_de_usuario_y_grupos_locales.html" class="no-ch">2.1.- Tipos de cuentas de usuario y grupos locales</a></li>
+      <li><a href="22_gestin_de_cuentas_de_usuario_y_grupos_locales_i.html" class="daddy">2.2.- Gestión de cuentas de usuario y grupos locales (I).</a>
+      <ul class="other-section">
+         <li><a href="221_gestin_de_cuentas_de_usuario_y_grupos_locales_ii.html" class="no-ch">2.2.1.- Gestión de cuentas de usuario y grupos locales (II).</a></li>
+      </ul>
+      </li>
+      <li><a href="23_uac_control_de_cuentas_de_usuario.html" class="no-ch">2.3.- UAC: Control de Cuentas de Usuario.</a></li>
+   </ul>
+   </li>
+   <li><a href="3_administracin_de_seguridad_de_recursos_a_nivel_local.html" class="daddy">3.- Administración de seguridad de recursos a nivel local.</a>
+   <ul class="other-section">
+      <li><a href="31_permisos_de_archivos_y_carpetas_i.html" class="daddy">3.1.- Permisos de archivos y carpetas (I).</a>
+      <ul class="other-section">
+         <li><a href="311_permisos_de_archivos_y_carpetas_ii_herencia.html" class="no-ch">3.1.1.- Permisos de archivos y carpetas (II). Herencia</a></li>
+      </ul>
+      </li>
+      <li><a href="32_directivas_de_seguridad_local_y_directivas_de_grupo_local.html" class="daddy">3.2.- Directivas de seguridad local y Directivas de grupo local.</a>
+      <ul class="other-section">
+         <li><a href="321_directivas_de_seguridad_local.html" class="no-ch">3.2.1.- Directivas de seguridad local.</a></li>
+         <li><a href="322_creacin_de_contraseas.html" class="daddy">3.2.2.- Creación de contraseñas</a>
+         <ul class="other-section">
+            <li><a href="3221_contraseas_robustas.html" class="no-ch">3.2.2.1.- Contraseñas robustas</a></li>
+         </ul>
+         </li>
+         <li><a href="323_directivas_de_grupo_local.html" class="no-ch">3.2.3.- Directivas de grupo local.</a></li>
+      </ul>
+      </li>
+      <li><a href="33_cuotas_de_disco.html" class="no-ch">3.3.- Cuotas de disco</a></li>
+   </ul>
+   </li>
+   <li><a href="4_mantenimiento_del_sistema.html" class="daddy">4.- Mantenimiento del sistema.</a>
+   <ul class="other-section">
+      <li><a href="41_configuracin_de_las_actualizaciones_automticas.html" class="no-ch">4.1.- Configuración de las actualizaciones automáticas.</a></li>
+      <li><a href="42_monitorizacin_del_sistema_monitor_de_rendimiento.html" class="no-ch">4.2.- Monitorización del sistema: Monitor de rendimiento.</a></li>
+      <li><a href="43_desfragmentacin_y_chequeo_de_discos.html" class="no-ch">4.3.- Desfragmentación y chequeo de discos.</a></li>
+      <li><a href="44_programacin_de_tareas_de_mantenimiento.html" class="no-ch">4.4.- Programación de tareas de mantenimiento.</a></li>
+      <li><a href="45_restaurar_el_sistema.html" class="no-ch">4.5.- Restaurar el sistema.</a></li>
+      <li><a href="46_copias_de_seguridad.html" class="no-ch">4.6.- Copias de seguridad.</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="5_uso_de_antivirus_antiespas_y_otros_programas_de_proteccin.html" class="current-page-parent daddy">5.- Uso de antivirus, antiespías y otros programas de protección.</a>
+   <ul>
+      <li><a href="51_antivirus.html" class="no-ch">5.1.- Antivirus.</a></li>
+      <li><a href="52_windows_defender.html" class="no-ch">5.2.- Windows Defender.</a></li>
+      <li><a href="53_prevencin_de_ejecucin_de_datos_dep.html" class="no-ch">5.3.- Prevención de ejecución de datos (DEP).</a></li>
+      <li class="current-page-parent"><a href="54_sistema_de_cifrado_de_archivos.html" class="current-page-parent daddy">5.4.- Sistema de cifrado de archivos.</a>
+      <ul>
+         <li id="active"><a href="541_procesos_de_cifrado_exportacin_e_importacin_de_certificados_efs.html" class="active no-ch">5.4.1.- Procesos de cifrado, exportación e importación de certificados EFS.</a></li>
+         <li><a href="542_bitlocker.html" class="no-ch">5.4.2.- Bitlocker.</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="6_gestin_de_procesos_en_windows.html" class="daddy">6. Gestión de procesos en Windows.</a>
+   <ul class="other-section">
+      <li><a href="61_gestin_de_procesos_por_lnea_de_comandos.html" class="no-ch">6.1.- Gestión de procesos por línea de comandos.</a></li>
+   </ul>
+   </li>
+   <li><a href="7_gestin_de_servicios_en_windows.html" class="daddy">7. Gestión de servicios en Windows</a>
+   <ul class="other-section">
+      <li><a href="71_gestin_de_servicios_en_modo_comando.html" class="no-ch">7.1.- Gestión de servicios en modo comando.</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="54_sistema_de_cifrado_de_archivos.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="542_bitlocker.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">5.4.1.- Procesos de cifrado, exportación e importación de certificados EFS.</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id229">
+<div class="iDevice emphasis0">
+<div id="ta229_1" class="block iDevice_content">
+<div id="id40" class="FreeTextfpdIdevice">
+<div class="iDevice emphasis0">
+<div id="ta40_73" class="block" style="display: block;">
+<p><strong>Sistema de cifrado de archivos: Proceso de cifrado de datos, exportaci&oacute;n e importaci&oacute;n de certificados EFS</strong></p>
+<p><strong>Proceso de cifrado de datos</strong></p>
+<p>El sistema de cifrado de archivos (<acronym title="Encrypting File System" lang="en">EFS</acronym>) es una caracter&iacute;stica de <span lang="en">Windows</span> que permite <strong>almacenar informaci&oacute;n en el disco duro de forma cifrada</strong>. El cifrado es la protecci&oacute;n de mayor nivel que proporciona <span lang="en">Windows</span> para mantener la informaci&oacute;n a salvo.</p>
+<p>Para cifrar archivos o carpetas con <acronym title="Encrypting File System" lang="en">EFS</acronym>, abre el explorador de <span lang="en">Windows</span> y haz clic con el <strong>bot&oacute;n secundario</strong> en el archivo o la carpeta que quieres cifrar. Haz clic en <strong>Propiedades</strong>.</p>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Paso1 Cifrado de un archivo en Windows 7" href="SI06_CONT_R49_1_detalle_proc_efs1.png"><img alt="Muestra la opci&oacute;n Propiedades del men&uacute; contextual de un archivo al hacer clic con el bot&oacute;n derecho. En dicha opci&oacute;n podemos cifrar el archivo." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs1_miniatura.png" style="width: 200px; height: 144px;" title="Paso1 Cifrado de un archivo en Windows 7." /></a></div>
+</div>
+<p>&nbsp;</p>
+<p>En la ficha General &gt; Avanzadas y activamos la casilla <strong>Cifrar contenido para proteger datos</strong> y Aceptar.</p>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Paso 2 Cifrado de un archivo en Windows 7" href="SI06_CONT_R49_1_detalle_proc_efs2.png"><img alt="Muestra la ventana con la ficha  General, opci&oacute;n Avanzadas y se activa la casilla Cifrar contenido para proteger datos." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs2_miniatura.png" style="width: 200px; height: 144px;" title="Paso 2 Cifrado de un archivo en Windows 7" height="144" width="200" /></a>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Cifrado de un archivo en Windows 7 &ndash; opciones adicionales" href="SI06_CONT_R49_1_detalle_proc_efs3.png"><img alt="Muestra una ventana con  opciones de cifrado adicionales (cifrar s&oacute;lo el archivo o el archivo y la carpeta primaria)." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs3_miniatura.png" style="width: 156px; height: 168px;" title="Cifrado de un archivo en Windows 7 &ndash; opciones adicionales." height="168" width="156" /></a></div>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+<p>Hay disponibles opciones de cifrado adicionales.</p>
+<p>Exportaci&oacute;n de certificados <acronym title="Encrypting File System" lang="en">EFS</acronym> (copia de seguridad)</p>
+<p>Despu&eacute;s de realizar el cifrado de datos, se solicita que se haga copia de seguridad de la clave de cifrado:</p>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Copia de seguridad de un certificado de cifrado 1" href="SI06_CONT_R49_1_detalle_proc_efs4.png"><img alt="Muestra una ventana donde se solicita que se haga copia de seguridad de la clave de cifrado." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs4_miniatura.png" style="width: 200px; height: 144px;" title="Copia de seguridad de un certificado de cifrado 1." height="144" width="200" /></a></div>
+</div>
+<p>&nbsp;</p>
+<p>Si cifras datos en el equipo, necesitas un m&eacute;todo para recuperar esos datos en caso de que surja alg&uacute;n problema con la clave de cifrado. Si la clave de cifrado se pierde o queda da&ntilde;ada y no tienes ning&uacute;n medio de recuperar los datos, &eacute;stos se perder&aacute;n. Tambi&eacute;n perder&aacute;s datos si almacenas la clave de cifrado en una tarjeta inteligente y &eacute;sta se da&ntilde;a o se pierde. Para asegurarse de que siempre puede tener acceso a los datos cifrados, debe hacer una copia de seguridad de la clave y del certificado de cifrado. Si hay m&aacute;s de una persona que usa tu equipo, o si usas una tarjeta inteligente para cifrar archivos, debes crear un certificado de recuperaci&oacute;n de archivos.</p>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Copia de seguridad de un certificado de cifrado 2." href="SI06_CONT_R49_1_detalle_proc_efs5.png"><img alt="Muestra la ventana con la opci&oacute;n marcada de Hacer copia de seguridad ahora (recomendado) del certificado y de la clave en un medio extra&iacute;ble." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs5_miniatura.png" style="width: 200px; height: 156px;" title="Copia de seguridad de un certificado de cifrado 2." height="156" width="200" /></a>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Inicio de la exportaci&oacute;n de un certificado" href="SI06_CONT_R49_1_detalle_proc_efs6.png"><img alt="Muestra la ventana del inicio del asistente para exportaci&oacute;n de certificados." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs6_miniatura.png" style="width: 176px; height: 160px;" title="Inicio de la exportaci&oacute;n de un certificado." height="160" width="176" /></a>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Exportaci&oacute;n de certificado - opciones." href="SI06_CONT_R49_1_detalle_proc_efs7.png"><img alt="Muestra la ventana con las opciones marcadas de Intercambio de informaci&oacute;n personal PKCS#12, incluir todos los certificador en la ruta de acceso de certificaci&oacute;n y exportar todas las propiedades extendidas." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs7_miniatura.png" style="width: 176px; height: 160px;" title="Exportaci&oacute;n de certificado - opciones." /></a>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a href="SI06_CONT_R49_1_detalle_proc_efs8.png"><img src="SI06_CONT_R49_1_detalle_proc_efs8_miniatura.png" class="imagen_ampliable" height="140" width="200" /></a><br />
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Exportaci&oacute;n de certificado- asignaci&oacute;n de clave" href="SI06_CONT_R49_1_detalle_proc_efs9.png"><img alt="Muestra la ventana donde nos pide una contrase&ntilde;a para mantener la seguridad de la clave privada de cifrado." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs9_miniatura.png" style="width: 176px; height: 160px;" title="Exportaci&oacute;n de certificado- asignaci&oacute;n de clave." height="160" width="176" /></a>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Exportaci&oacute;n de certificado &ndash; asignaci&oacute;n de nombre de archivo." href="SI06_CONT_R49_1_detalle_proc_efs10.png"><img alt="Muestra la ventana donde se indica el nombre del archivo a exportar." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs10_miniatura.png" style="width: 176px; height: 160px;" title="Exportaci&oacute;n de certificado &ndash; asignaci&oacute;n de nombre de archivo." height="160" width="176" /></a>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Fin del asistente de exportaci&oacute;n de certificados." href="SI06_CONT_R49_1_detalle_proc_efs11.png"><img alt="Muestra la ventana de finalizaci&oacute;n del asistente de exportaci&oacute;n de certificados. Aparece un resumen de la configuraci&oacute;n especificada." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs11_miniatura.png" style="width: 184px; height: 160px;" title="Fin del asistente de exportaci&oacute;n de certificados." height="160" width="184" /></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+<p>Finalmente, se genera un certificado del que deberemos hacer copia de seguridad, preferiblemente en un medio extra&iacute;ble.</p>
+<p>Existe la posibilidad de hacer una copia de seguridad de todos o algunos de los certificados <acronym title="Encrypting File System" lang="en">EFS</acronym> almacenados en nuestro sistema en otro momento posterior al cifrado de la informaci&oacute;n.</p>
+<p>Si quisi&eacute;ramos hacer una copia de todos los certificados <acronym title="Encrypting File System" lang="en">EFS</acronym> del equipo:</p>
+<ol>
+<li>Para abrir el Administrador de certificados, haz clic en el bot&oacute;n Inicio, escribe <code>certmgr.msc</code> en el cuadro de b&uacute;squeda y, a continuaci&oacute;n, presiona ENTER.&zwnj; Si se te solicita una contrase&ntilde;a de administrador o una confirmaci&oacute;n, escribe la contrase&ntilde;a o proporciona la confirmaci&oacute;n.
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Administrador de certificados." href="SI06_CONT_R49_1_detalle_proc_efs12.png"><img alt="Muestra la ventana del Administrador de certificados, dividida en dos partes, la izquierda con el contenedor Certificados-Usuario actual y la parte derecha con los nombres de los almacenes l&oacute;gicos." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs12_miniatura.png" style="width: 196px; height: 136px;" title="Administrador de certificados." /></a></div>
+</div>
+</li>
+<li>En el panel izquierdo, haz doble clic en Personal.</li>
+<li>Haz clic en Certificados.</li>
+<li>En el panel principal, haz clic en el certificado en el que se muestra Sistema de cifrado de archivos, en Prop&oacute;sitos planteados. Es posible que debas desplazarte a la derecha para verlo.
+<p>Consejo: <strong>Hacer una copia de seguridad de todos los certificados <acronym title="Encrypting File System" lang="en">EFS</acronym></strong> que haya.</p>
+</li>
+<li>Haz clic en el men&uacute; Acci&oacute;n, apunta a Todas las tareas y, a continuaci&oacute;n, haz clic en Exportar.</li>
+<li>En el Asistente para exportaci&oacute;n de certificados, haz clic en Siguiente, despu&eacute;s en Exportar la clave privada y, a continuaci&oacute;n, en Siguiente.</li>
+<li>Haz clic en <span lang="en">Personal Information Exchange</span> y, a continuaci&oacute;n, en Siguiente.</li>
+<li>Escribe la clave o contrase&ntilde;a que deseas usar, conf&iacute;rmala y, a continuaci&oacute;n, haz clic en Siguiente. En el proceso de exportaci&oacute;n, se crear&aacute; un archivo para almacenar el certificado.</li>
+<li>Escribe el nombre y la ubicaci&oacute;n del archivo (incluye la ruta de acceso completa), o bien haz clic en Examinar, despl&aacute;zate hasta la ubicaci&oacute;n, escribe el nombre del archivo y, a continuaci&oacute;n, haz clic en Guardar.</li>
+<li>Haz clic en Siguiente y, despu&eacute;s, en Finalizar.</li>
+</ol>
+<p><strong>Recuperaci&oacute;n de certificados <acronym title="Encrypting File System" lang="en">EFS</acronym>:</strong></p>
+<p>Si por cualquier motivo tuvieras que <strong>recuperar la clave privada</strong> realizar&iacute;as el proceso contrario, <strong>importar&iacute;as el certificado</strong> al equipo en cuesti&oacute;n.</p>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Asistente de importaci&oacute;n de certificados." href="SI06_CONT_R49_1_detalle_proc_efs13.png"><img alt="Muestra la ventana de inicio del Asistente de importaci&oacute;n de certificados." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs13_miniatura.png" style="width: 176px; height: 160px;" title="Asistente de importaci&oacute;n de certificados." height="160" width="176" /></a></div>
+</div>
+<p>&nbsp;</p>
+<p class="elemento_centrado">Importante, en la importaci&oacute;n activar las siguientes opciones:</p>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Activaci&oacute;n de opciones de seguridad en la importaci&oacute;n de certificados." href="SI06_CONT_R49_1_detalle_proc_efs14.png"><img alt="Muestra una ventana donde se activan para la importaci&oacute;n las opciones: habilitar protecci&oacute;n segura para clave privada, marcar esta clave como exportable e incluir todas las propiedades exportables. Adem&aacute;s aparece un recuadro donde se escribe la contrase&ntilde;a para la clave privada." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs14_miniatura.png" style="width: 176px; height: 160px;" title="Activaci&oacute;n de opciones de seguridad en la importaci&oacute;n de certificados." height="160" width="176" /></a></div>
+</div>
+<p class="elemento_centrado">&nbsp;</p>
+<p>Tambi&eacute;n se puede usar la <strong>herramienta de la l&iacute;nea de comandos <code>cipher</code></strong> para mostrar o cambiar el cifrado de carpetas y archivos en las particiones <acronym title="NT File system" lang="en">NTFS</acronym>.</p>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Paso 15 Cifrado de un archivo en Windows 7." href="SI06_CONT_R49_1_detalle_proc_efs15.png"><img alt="Muestra una ventana de l&iacute;nea de comandos con la herramienta cipher." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs15_miniatura.png" style="width: 200px; height: 100px;" title="Paso 15 Cifrado de un archivo en Windows 7." height="100" width="200" /></a></div>
+</div>
+<p>&nbsp;</p>
+<p><strong>Importaci&oacute;n de certificados <acronym title="Encrypting File System" lang="en">EFS</acronym> (restaurar la copia de seguridad)</strong></p>
+<p>Podemos restaurar la copia de un certificado directamente haciendo doble clic sobre el fichero del certificado. En ese momento se iniciar&aacute; un asistente que te guiar&aacute; durante el proceso.</p>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Inicio del Asistente de importaci&oacute;n de certificados" href="SI06_CONT_R49_1_detalle_proc_efs16.png"><img alt="Muestra la ventana de inicio del Asistente de importaci&oacute;n de certificados." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs16_miniatura.png" style="width: 180px; height: 160px;" title="Inicio del Asistente de importaci&oacute;n de certificados." height="160" width="180" /></a></div>
+</div>
+<p>&nbsp;</p>
+<p class="elemento_centrado">Indicamos donde est&aacute; el archivo del certificado:</p>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Ampliar imagen." href="SI06_CONT_R49_1_detalle_proc_efs17.png"><img alt="Muestra la ventana donde se especifica el nombre de la copia de seguridad del certificado." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs17_miniatura.png" style="width: 180px; height: 160px;" title="Asistente de importaci&oacute;n de certificados &ndash; especificaci&oacute;n del nombre de la copia de seguridad del certificado" height="160" width="180" /></a></div>
+</div>
+<p class="elemento_centrado">&nbsp;</p>
+<p><strong>Importante</strong>: En la siguiente pantalla debemos introducir la clave privada y marcar las dos opciones que aparecen deseleccionadas:</p>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Activaci&oacute;n de opciones de seguridad en la importaci&oacute;n de certificados." href="SI06_CONT_R49_1_detalle_proc_efs18.png"><img alt="Muestra una ventana donde se activan para la importaci&oacute;n las opciones: habilitar protecci&oacute;n segura para clave privada, marcar esta clave como exportable e incluir todas las propiedades exportables. Adem&aacute;s aparece un recuadro donde se escribe la contrase&ntilde;a para la clave privada." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs18_miniatura.png" style="width: 172px; height: 160px;" title="Activaci&oacute;n de opciones de seguridad en la importaci&oacute;n de certificados." height="160" width="172" /></a></div>
+</div>
+<p>&nbsp;</p>
+<p>La primera opci&oacute;n, "Habilitar protecci&oacute;n segura de clave privada" va a conseguir que cada vez que un programa haga uso del certificado por seguridad pida que introduzcamos la clave privada. La segunda opci&oacute;n, "Marcar esta clave como exportable", consigue que en el futuro cuando se haga una nueva copia de seguridad (exportaci&oacute;n del certificado), &eacute;ste se exporte completo, incluyendo sus claves.</p>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Fin del asistente de importaci&oacute;n de certificados." href="SI06_CONT_R49_1_detalle_proc_efs19.png"><img alt="Muestra la ventana de finalizaci&oacute;n del asistente de importaci&oacute;n de certificados. Aparece un resumen de la configuraci&oacute;n especificada." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs19_miniatura.PNG" style="width: 176px; height: 160px;" title="Fin del asistente de importaci&oacute;n de certificados." height="160" width="176" /></a></div>
+</div>
+<p>&nbsp;</p>
+<p>Ahora llega el momento de establecer el nivel de seguridad con el que se va a utilizar el certificado. Es fundamental establecer un <strong>nivel Alto</strong>, en el cual nos va a pedir la clave cada vez que hagamos uso del certificado.</p>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Importaci&oacute;n del certificado- establecimiento del nivel de seguridad" href="SI06_CONT_R49_1_detalle_proc_efs20.png"><img alt="Muestra la pantalla donde se establece el nivel de seguridad con el que se va a utilizar el certificado." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs20_miniatura.png" style="width: 200px; height: 144px;" title="Importaci&oacute;n del certificado- establecimiento del nivel de seguridad." height="144" width="200" /></a>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Ampliar imagen." href="SI06_CONT_R49_1_detalle_proc_efs21.png"><img alt="Muestra la pantalla donde elegimos un nivel de seguridad alto." class="imagen_ampliable" src="SI06_CONT_R49_1_detalle_proc_efs21_miniatura.png" style="width: 200px; height: 152px;" title="Importaci&oacute;n del certificado- establecimiento del nivel alto de seguridad." height="152" width="200" /></a></div>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+<p>Tras este paso, continuaremos con el asistente hasta la finalizaci&oacute;n del proceso.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="54_sistema_de_cifrado_de_archivos.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="542_bitlocker.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>6. Gestión de procesos en Windows. </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="generator" content="eXeLearning 2.0.4ppa04 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú"}</script>
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Administración básica de Windows</a></li>
+   <li><a href="1_herramientas_administrativas_y_del_sistema.html" class="daddy">1.- Herramientas administrativas y del sistema.</a>
+   <ul class="other-section">
+      <li><a href="11_herramientas_administrativas.html" class="no-ch">1.1.- Herramientas administrativas.</a></li>
+      <li><a href="12_herramientas_del_sistema.html" class="no-ch">1.2.- Herramientas del sistema.</a></li>
+   </ul>
+   </li>
+   <li><a href="2_administracin_de_grupos_y_cuentas_de_usuario_locales.html" class="daddy">2.- Administración de grupos y cuentas de usuario locales.</a>
+   <ul class="other-section">
+      <li><a href="21_tipos_de_cuentas_de_usuario_y_grupos_locales.html" class="no-ch">2.1.- Tipos de cuentas de usuario y grupos locales</a></li>
+      <li><a href="22_gestin_de_cuentas_de_usuario_y_grupos_locales_i.html" class="daddy">2.2.- Gestión de cuentas de usuario y grupos locales (I).</a>
+      <ul class="other-section">
+         <li><a href="221_gestin_de_cuentas_de_usuario_y_grupos_locales_ii.html" class="no-ch">2.2.1.- Gestión de cuentas de usuario y grupos locales (II).</a></li>
+      </ul>
+      </li>
+      <li><a href="23_uac_control_de_cuentas_de_usuario.html" class="no-ch">2.3.- UAC: Control de Cuentas de Usuario.</a></li>
+   </ul>
+   </li>
+   <li><a href="3_administracin_de_seguridad_de_recursos_a_nivel_local.html" class="daddy">3.- Administración de seguridad de recursos a nivel local.</a>
+   <ul class="other-section">
+      <li><a href="31_permisos_de_archivos_y_carpetas_i.html" class="daddy">3.1.- Permisos de archivos y carpetas (I).</a>
+      <ul class="other-section">
+         <li><a href="311_permisos_de_archivos_y_carpetas_ii_herencia.html" class="no-ch">3.1.1.- Permisos de archivos y carpetas (II). Herencia</a></li>
+      </ul>
+      </li>
+      <li><a href="32_directivas_de_seguridad_local_y_directivas_de_grupo_local.html" class="daddy">3.2.- Directivas de seguridad local y Directivas de grupo local.</a>
+      <ul class="other-section">
+         <li><a href="321_directivas_de_seguridad_local.html" class="no-ch">3.2.1.- Directivas de seguridad local.</a></li>
+         <li><a href="322_creacin_de_contraseas.html" class="daddy">3.2.2.- Creación de contraseñas</a>
+         <ul class="other-section">
+            <li><a href="3221_contraseas_robustas.html" class="no-ch">3.2.2.1.- Contraseñas robustas</a></li>
+         </ul>
+         </li>
+         <li><a href="323_directivas_de_grupo_local.html" class="no-ch">3.2.3.- Directivas de grupo local.</a></li>
+      </ul>
+      </li>
+      <li><a href="33_cuotas_de_disco.html" class="no-ch">3.3.- Cuotas de disco</a></li>
+   </ul>
+   </li>
+   <li><a href="4_mantenimiento_del_sistema.html" class="daddy">4.- Mantenimiento del sistema.</a>
+   <ul class="other-section">
+      <li><a href="41_configuracin_de_las_actualizaciones_automticas.html" class="no-ch">4.1.- Configuración de las actualizaciones automáticas.</a></li>
+      <li><a href="42_monitorizacin_del_sistema_monitor_de_rendimiento.html" class="no-ch">4.2.- Monitorización del sistema: Monitor de rendimiento.</a></li>
+      <li><a href="43_desfragmentacin_y_chequeo_de_discos.html" class="no-ch">4.3.- Desfragmentación y chequeo de discos.</a></li>
+      <li><a href="44_programacin_de_tareas_de_mantenimiento.html" class="no-ch">4.4.- Programación de tareas de mantenimiento.</a></li>
+      <li><a href="45_restaurar_el_sistema.html" class="no-ch">4.5.- Restaurar el sistema.</a></li>
+      <li><a href="46_copias_de_seguridad.html" class="no-ch">4.6.- Copias de seguridad.</a></li>
+   </ul>
+   </li>
+   <li><a href="5_uso_de_antivirus_antiespas_y_otros_programas_de_proteccin.html" class="daddy">5.- Uso de antivirus, antiespías y otros programas de protección.</a>
+   <ul class="other-section">
+      <li><a href="51_antivirus.html" class="no-ch">5.1.- Antivirus.</a></li>
+      <li><a href="52_windows_defender.html" class="no-ch">5.2.- Windows Defender.</a></li>
+      <li><a href="53_prevencin_de_ejecucin_de_datos_dep.html" class="no-ch">5.3.- Prevención de ejecución de datos (DEP).</a></li>
+      <li><a href="54_sistema_de_cifrado_de_archivos.html" class="daddy">5.4.- Sistema de cifrado de archivos.</a>
+      <ul class="other-section">
+         <li><a href="541_procesos_de_cifrado_exportacin_e_importacin_de_certificados_efs.html" class="no-ch">5.4.1.- Procesos de cifrado, exportación e importación de certificados EFS.</a></li>
+         <li><a href="542_bitlocker.html" class="no-ch">5.4.2.- Bitlocker.</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li id="active"><a href="6_gestin_de_procesos_en_windows.html" class="active daddy">6. Gestión de procesos en Windows.</a>
+   <ul>
+      <li><a href="61_gestin_de_procesos_por_lnea_de_comandos.html" class="no-ch">6.1.- Gestión de procesos por línea de comandos.</a></li>
+   </ul>
+   </li>
+   <li><a href="7_gestin_de_servicios_en_windows.html" class="daddy">7. Gestión de servicios en Windows</a>
+   <ul class="other-section">
+      <li><a href="71_gestin_de_servicios_en_modo_comando.html" class="no-ch">7.1.- Gestión de servicios en modo comando.</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="542_bitlocker.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="61_gestin_de_procesos_por_lnea_de_comandos.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">6. Gestión de procesos en Windows.</h1></header>
+<article class="iDevice_wrapper CasopracticofpdIdevice em_iDevice" id="id44">
+<div class="iDevice emphasis_casopracticofpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Caso práctico</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta44_62" class="block iDevice_content">
+<p><span style="font-family: Times New Roman,serif;"><img src="EM03_CONT_R04_01_Tareas.jpg" style="float: left; margin-left: 10px; margin-right: 10px;" height="160" width="200" /></span></p>
+<p></p>
+<p>En el uso diario de un ordenador, puede ocurrir por diferentes motivos, que una de las aplicaciones que usemos no responda y se quede bloqueada. Si eso ocurre no podremos usar la aplicación aunque intentemos iniciarla nuevamente. En este caso no nos queda otra solución que forzar el cierre de la aplicación, aún con el riesgo de perder información.</p>
+<p align="JUSTIFY"></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id45">
+<div class="iDevice emphasis0">
+<div id="ta45_1" class="block iDevice_content">
+<p class="western" style="margin-bottom: 0cm; line-height: 100%;" align="LEFT"><span style="background: transparent;">Cuando ejecutas un programa, el sistema operativo carga en memoria uno o varios procesos con las instrucciones que permiten que podamos usarlo. Estos procesos podemos consultarlos, ver el consumo de procesador y de memoria que tienen e incluso finalizarlos en caso de que se queden bloqueados o no respondan.</span></p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%;" align="LEFT"> </p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%;" align="LEFT"><span style="background: transparent;">El <strong>administrador de tareas</strong> es el programa que nos va a permitir gestionar las aplicaciones y procesos que se están ejecutando en el equipo. Su uso más habitual es para cerrar un programa que no responde y supervisar el rendimiento del equipo. </span></p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%;" align="LEFT"> </p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%;" align="LEFT"><span style="background: transparent;">Las dos formas más habituales de iniciar este programa son:</span></p>
+<ol>
+<li class="western" style="margin-bottom: 0cm; line-height: 100%;"><span style="background: transparent;"> Mediante el menú contextual en la barra de tareas y seleccionando “Administrador de tareas”.</span></li>
+<li class="western" style="margin-bottom: 0cm; line-height: 100%;"><span style="background: transparent;">Mediante la combinación de teclas “<strong>Control + Mayúscula + Escape</strong>”.</span></li>
+</ol>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%;" align="LEFT"> </p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%;" align="LEFT"><span style="background: transparent;">En el siguiente vídeo aprenderás a consultar y gestionar las aplicaciones que se están ejecutando en el sistema:</span></p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%;" align="LEFT"> </p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%; text-align: center;" align="LEFT"><iframe width="640" height="360" src="//www.youtube.com/embed/pejdzdqm-Ko" style="border:0"></iframe><br /> </p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%;" align="LEFT"> </p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%;" align="LEFT"> </p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ParasabermasfpdIdevice em_iDevice" id="id46">
+<div class="iDevice emphasis_parasabermasfpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Para saber más</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta46_43" class="block iDevice_content">
+<p style="text-align: left;">Mira el siguiente art&iacute;culo de la wikipedia si quieres saber m&aacute;s sobre el administrador de tareas:</p>
+<p class="western" style="margin-bottom: 0cm; text-align: center;"><a title="Acceder al art&iacute;culo en wikipedia sobre el administrador de tareas de Windows 7." href="http://es.wikipedia.org/wiki/Administrador_de_tareas_%28Windows%29" target="_blank">El administrador de tareas</a></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="542_bitlocker.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="61_gestin_de_procesos_por_lnea_de_comandos.html" class="next"> Siguiente<span> &raquo;</span></a>
+</nav>
+</div>
+</div>
+</body></html>
